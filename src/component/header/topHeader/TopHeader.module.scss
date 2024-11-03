@@ -1,0 +1,16 @@
+@use "../../../../styles/common" as *;
+
+.nav {
+    background-color: $header;
+    padding: 12px 16px 16px;
+    .navList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        color: $white;
+        font-weight: 600;
+        font-size: $size-15;
+        gap: 32px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "posts": [
+        { 
+            "id": 0, 
+            "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+            "img": "/slider/slider-img0.webp" 
+        },
+        {
+            "id": 1,
+            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+            "img": "/slider/slider-img1.webp" 
+        },
+        {
+            "id": 2,
+            "title": "【テンプレート配布】Notionでブログ記事の下書きをまとめて管理", 
+            "img": "/slider/slider-img2.webp" 
+        },
+        {
+            "id": 3,
+            "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
+            "img": "/slider/slider-img3.webp" 
+        },
+        {
+            "id": 4,
+            "title": "【テンプレート配布】Notionでタスク管理！シンプルすぎず複雑すぎないToDoリスト", 
+            "img": "/slider/slider-img4.webp" 
+        },
+        {
+            "id": 5,
+            "title": "【テンプレート配布】Notionでシンプルな家計簿！飽き性の主婦でも続けられる工夫と作り方", 
+            "img": "/slider/slider-img5.webp" 
+        },
+        {
+            "id": 6,
+            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+            "img": "/slider/slider-img6.webp" 
+        },
+        {
+            "id": 7,
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/slider/slider-img7.webp" 
+        },
+        {
+            "id": 8,
+            "title": "【テンプレート配布】Notionでサブスクと固定費を管理【グラフ表示あり】", 
+            "img": "/slider/slider-img8.webp" 
+        }
+    ]
+}
