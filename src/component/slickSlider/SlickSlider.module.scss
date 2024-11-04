@@ -5,6 +5,8 @@
     display: flex !important;
     flex-direction: column;
     border: none;
+    justify-content: center;
+    outline: none;
     .slideImg {
         box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
         cursor: pointer;

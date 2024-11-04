@@ -1,18 +1,29 @@
 import { SliderImgType } from "@/data/type";
 import { NextResponse } from 'next/server';
 
-export const getSliderData = async(): Promise<SliderImgType[]> => {
-    console.log("API URL:", process.env.NEXT_PUBLIC_BE_API_URL); 
+export const getSliderData = async(): Promise<
+    { 
+        notion: SliderImgType[], 
+        sango: SliderImgType[], 
+        python: SliderImgType[], 
+        category: SliderImgType[],
+        new: SliderImgType[] 
+    }> => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BE_API_URL}/posts`);
 
-    if(!res.ok) {
-        throw new Error (`Error: ${res.status}`)
+    if (!res.ok) {
+        throw new Error(`Error: ${res.status}`);
     }
 
-    // await new Promise((resolve) => setTimeout(resolve, 1500))
-
     const sliderData = await res.json();
-    return sliderData;
+
+    const notionData = sliderData[0]?.notion || [];
+    const sangoData = sliderData[0]?.sango || [];
+    const pythonData = sliderData[0]?.python || [];
+    const categoryData = sliderData[0]?.category || [];
+    const newData = sliderData[0]?.category || [];
+
+    return { notion: notionData, sango: sangoData, python: pythonData, category: categoryData, new: newData };
 }
 
 export async function GET() {

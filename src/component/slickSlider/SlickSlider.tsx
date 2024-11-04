@@ -11,7 +11,11 @@ import styles from "./SlickSlider.module.scss";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
-export default function SlickSlider() {
+interface SlickSliderProps {
+  category: string;
+}
+
+export default function SlickSlider({category}:SlickSliderProps) {
   const settings = {
     autoplay: true,
     pauseOnHover: true,
@@ -25,21 +29,27 @@ export default function SlickSlider() {
       dots.forEach(dot => {
         const htmlDot = dot as HTMLElement; 
         htmlDot.style.margin = '0 16px';
-        htmlDot.style.bottom = '-30px';
+        htmlDot.style.bottom = '-20px';
       });
     },
   };
 
   const [images, setImages] = useState<SliderImgType[]>([]);
-  const [titles, setTitles] = useState<SliderImgType[]>([])
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const data = await getSliderData();
-        setImages(data);
-        setTitles(data);
+
+        if(category === "notion") {
+          setImages(data.notion)
+        } else if (category === "sango") {
+          setImages(data.sango)
+        } else {
+          setImages(data.python)
+        }
+
       } catch (error) {
         console.error("Error fetching slider data:", error);
         setError("データの取得に失敗しました。");
@@ -53,26 +63,14 @@ export default function SlickSlider() {
     return <div>{error}</div>;
   }
 
-  if (!images || images.length === 0) {
-    return <div>No images available</div>;
-  }
-
-  if (!titles || titles.length === 0) {
-    return <div>No images available</div>;
-  }
-
   return (
     <Slider {...settings}>
-      {images.map((img) => {
-        
-        const titleText = titles.find((title) => title.id === img.id)
-
-        return (
-          <div key={img.id} className={styles.slideContainer}>
-            <Image src={img.img} alt={`slider画像${img.id}`} width={280} height={162} className={styles.slideImg}/>
-            <p className={styles.slideText}>{titleText?.title}</p>
-          </div>
-        )})}
+      {images.map((img) => (
+        <div key={img.id} className={styles.slideContainer}>
+          <Image src={img.img} alt={`slider画像${img.id}`} width={280} height={162} className={styles.slideImg}/>
+          <p className={styles.slideText}>{img.title}</p>
+        </div>
+      ))}
     </Slider>
   );
 }

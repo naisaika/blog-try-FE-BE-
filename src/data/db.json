@@ -1,49 +1,176 @@
 {
     "posts": [
         { 
-            "id": 0, 
-            "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
-            "img": "/slider/slider-img0.webp" 
-        },
-        {
-            "id": 1,
-            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
-            "img": "/slider/slider-img1.webp" 
-        },
-        {
-            "id": 2,
-            "title": "【テンプレート配布】Notionでブログ記事の下書きをまとめて管理", 
-            "img": "/slider/slider-img2.webp" 
-        },
-        {
-            "id": 3,
-            "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
-            "img": "/slider/slider-img3.webp" 
-        },
-        {
-            "id": 4,
-            "title": "【テンプレート配布】Notionでタスク管理！シンプルすぎず複雑すぎないToDoリスト", 
-            "img": "/slider/slider-img4.webp" 
-        },
-        {
-            "id": 5,
-            "title": "【テンプレート配布】Notionでシンプルな家計簿！飽き性の主婦でも続けられる工夫と作り方", 
-            "img": "/slider/slider-img5.webp" 
-        },
-        {
-            "id": 6,
-            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
-            "img": "/slider/slider-img6.webp" 
-        },
-        {
-            "id": 7,
-            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
-            "img": "/slider/slider-img7.webp" 
-        },
-        {
-            "id": 8,
-            "title": "【テンプレート配布】Notionでサブスクと固定費を管理【グラフ表示あり】", 
-            "img": "/slider/slider-img8.webp" 
-        }
+            "notion": [
+                {
+                    "id": 0, 
+                    "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+                    "img": "/top/slider/notion/slider-img0.webp" 
+                },
+                {
+                    "id": 1,
+                    "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+                    "img": "/top/slider/notion/slider-img1.webp" 
+                },
+                {
+                    "id": 2,
+                    "title": "【テンプレート配布】Notionでブログ記事の下書きをまとめて管理", 
+                    "img": "/top/slider/notion/slider-img2.webp" 
+                },
+                {
+                    "id": 3,
+                    "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
+                    "img": "/top/slider/notion/slider-img3.webp" 
+                },
+                {
+                    "id": 4,
+                    "title": "【テンプレート配布】Notionでタスク管理！シンプルすぎず複雑すぎないToDoリスト", 
+                    "img": "/top/slider/notion/slider-img4.webp" 
+                },
+                {
+                    "id": 5,
+                    "title": "【テンプレート配布】Notionでシンプルな家計簿！飽き性の主婦でも続けられる工夫と作り方", 
+                    "img": "/top/slider/notion/slider-img5.webp" 
+                },
+                {
+                    "id": 6,
+                    "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+                    "img": "/top/slider/notion/slider-img6.webp" 
+                },
+                {
+                    "id": 7,
+                    "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+                    "img": "/top/slider/notion/slider-img7.webp" 
+                },
+                {
+                    "id": 8,
+                    "title": "【テンプレート配布】Notionでサブスクと固定費を管理【グラフ表示あり】", 
+                    "img": "/top/slider/notion/slider-img8.webp" 
+                }
+            ],
+            "sango": [
+                {
+                    "id": 0, 
+                    "title": "SANGO Landのおすすめブロックまとめ！活用例や使い方も解説", 
+                    "img": "/top/slider/sango/slider-img0.webp" 
+                },
+                {
+                    "id": 1,
+                    "title": "SANGOで超簡単にトップページをカスタマイズする方法【SANGO Land】", 
+                    "img": "/top/slider/sango/slider-img1.webp" 
+                },
+                {
+                    "id": 2,
+                    "title": "SANGO Landの使い方！センスやプログラミングの知識が無くても美しいデザインのサイトが作れるwebサービス【WordPress】", 
+                    "img": "/top/slider/sango/slider-img2.webp" 
+                },
+                {
+                    "id": 3,
+                    "title": "【ConoHa WING + SANGO】サーバー契約とWordPress初期設定について解説", 
+                    "img": "/top/slider/sango/slider-img3.webp" 
+                },
+                {
+                    "id": 4,
+                    "title": "【WordPress】SANGOのプロフィールで改行する方法", 
+                    "img": "/top/slider/sango/slider-img4.webp" 
+                },
+                {
+                    "id": 5,
+                    "title": "【SANGOとの相性を解説】WordPressにおすすめのプラグイン13選", 
+                    "img": "/top/slider/sango/slider-img5.webp" 
+                },
+                {
+                    "id": 6,
+                    "title": "【SANGO】カテゴリ並び順の変更とカテゴリラベルの色変更", 
+                    "img": "/top/slider/sango/slider-img6.webp" 
+                }
+            ],
+            "python": [
+                {
+                    "id": 0, 
+                    "title": "【Pillow】Pythonで画像をWebpに変換！エラーが出て変換できない場合の対処法も解説", 
+                    "img": "/top/slider/python/slider-img0.webp" 
+                },
+                {
+                    "id": 1,
+                    "title": "【検索順位チェックツール】ブログ記事の検索順位をStreamlitでグラフ化【python自作ツール】", 
+                    "img": "/top/slider/python/slider-img1.webp" 
+                },
+                {
+                    "id": 2,
+                    "title": "Udemyの「爆速で5つのPython Webアプリを開発」を受講して初心者がwebアプリを簡単に作れるようになった", 
+                    "img": "/top/slider/python/slider-img2.webp" 
+                },
+                {
+                    "id": 3,
+                    "title": "ミスチルの歌詞をPythonで分析【形態素解析→ネガポジ分析】", 
+                    "img": "/top/slider/python/slider-img3.webp" 
+                },
+                {
+                    "id": 4,
+                    "title": "【Pillow】Pythonで画像をまとめてリサイズ・圧縮！WebPにも変換可能【コピペでOK】", 
+                    "img": "/top/slider/python/slider-img4.webp" 
+                },
+                {
+                    "id": 5,
+                    "title": "ローカル環境で使うメモアプリを自作！全文検索機能付き", 
+                    "img": "/top/slider/python/slider-img5.webp" 
+                }
+            ],
+            "category": [
+                {
+                    "id": 0, 
+                    "title": "Notion", 
+                    "img": "/top/category/notion-logo.webp" 
+                },
+                {
+                    "id": 1,
+                    "title": "SANGO(WordPress)", 
+                    "img": "/top/category/sango.webp" 
+                },
+                {
+                    "id": 2,
+                    "title": "HTML/CSS/JS", 
+                    "img": "/top/category/htmlcssjs.webp"
+                },
+                {
+                    "id": 3,
+                    "title": "Python", 
+                    "img": "/top/category/python-logo.webp" 
+                }
+            ],
+            "new": [
+                {
+                    "id": 0, 
+                    "title": "【mosya】Progate が終わったら次におすすめの実践的なプログラミング学習サービス", 
+                    "img": "/top/new/new-img0.webp" 
+                },
+                {
+                    "id": 1,
+                    "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+                    "img": "/top/new/new-img1.webp"
+                },
+                {
+                    "id": 2,
+                    "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
+                    "img": "/top/new/new-img2.webp"
+                },
+                {
+                    "id": 3,
+                    "title": "SANGO Landのおすすめブロックまとめ【その他ブロック編】", 
+                    "img": "/top/new/new-img3.webp"
+                },
+                {
+                    "id": 4,
+                    "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
+                    "img": "/top/new/new-img3.webp"
+                },
+                {
+                    "id": 5,
+                    "title": "SANGO Landのおすすめブロックまとめ！活用例や使い方も解説", 
+                    "img": "/top/new/new-img3.webp"
+                }
+            ]
+        } 
     ]
 }
