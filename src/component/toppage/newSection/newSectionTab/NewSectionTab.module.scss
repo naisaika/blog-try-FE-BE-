@@ -1,0 +1,45 @@
+@use "../../../../../styles/common" as *;
+
+.selectList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    .selectItem {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-top: 40px;
+        cursor: pointer;
+        background-color: #EEEEEE;
+        .listText {
+            margin: 2px 0 0 4px;
+            font-weight: 600;
+            color: #A7A7A7;
+        }
+    }
+    .clicked {
+        background-color: $btn;
+        position: relative;
+        .listText {
+            color: $white !important;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 13px solid #333;
+            border-bottom: 0;
+            position: absolute;
+            z-index: 1;
+            bottom: -25%;
+        }
+    }
+}

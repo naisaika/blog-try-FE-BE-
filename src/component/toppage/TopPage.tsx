@@ -83,15 +83,18 @@ export const TopPage = () => {
             ))}
           </div>
           <div className={styles.newSection}>
-            {TOP_SUBTITLE.filter(subtitle => subtitle.id === 5).map((subtitle) => (
-              <div key={subtitle.id} >
-                  <div className={styles.searchWrapper}>
-                    <h2 className={styles.subTitle}>{subtitle.title}</h2>
-                    <p className={styles.subTitleText}>{subtitle.text}</p>
-                    <NewSection/>
-                  </div>
-              </div>
-            ))}
+            <div className={styles.newSectionWrapper}>
+              {TOP_SUBTITLE.filter(subtitle => subtitle.id === 5).map((subtitle) => (
+                <div key={subtitle.id} >
+                    <div className={styles.searchWrapper}>
+                      <h2 className={styles.subTitle}>{subtitle.title}</h2>
+                      <p className={styles.subTitleText}>{subtitle.text}</p>
+                      <NewSection/>
+                    </div>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
     </section>

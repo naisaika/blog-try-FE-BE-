@@ -1,5 +1,5 @@
 {
-    "posts": [
+    "slider": [
         { 
             "notion": [
                 {
@@ -116,61 +116,71 @@
                     "title": "ローカル環境で使うメモアプリを自作！全文検索機能付き", 
                     "img": "/top/slider/python/slider-img5.webp" 
                 }
-            ],
-            "category": [
-                {
-                    "id": 0, 
-                    "title": "Notion", 
-                    "img": "/top/category/notion-logo.webp" 
-                },
-                {
-                    "id": 1,
-                    "title": "SANGO(WordPress)", 
-                    "img": "/top/category/sango.webp" 
-                },
-                {
-                    "id": 2,
-                    "title": "HTML/CSS/JS", 
-                    "img": "/top/category/htmlcssjs.webp"
-                },
-                {
-                    "id": 3,
-                    "title": "Python", 
-                    "img": "/top/category/python-logo.webp" 
-                }
-            ],
-            "new": [
-                {
-                    "id": 0, 
-                    "title": "【mosya】Progate が終わったら次におすすめの実践的なプログラミング学習サービス", 
-                    "img": "/top/new/new-img0.webp" 
-                },
-                {
-                    "id": 1,
-                    "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
-                    "img": "/top/new/new-img1.webp"
-                },
-                {
-                    "id": 2,
-                    "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
-                    "img": "/top/new/new-img2.webp"
-                },
-                {
-                    "id": 3,
-                    "title": "SANGO Landのおすすめブロックまとめ【その他ブロック編】", 
-                    "img": "/top/new/new-img3.webp"
-                },
-                {
-                    "id": 4,
-                    "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
-                    "img": "/top/new/new-img3.webp"
-                },
-                {
-                    "id": 5,
-                    "title": "SANGO Landのおすすめブロックまとめ！活用例や使い方も解説", 
-                    "img": "/top/new/new-img3.webp"
-                }
             ]
-        } 
+        }
+    ],   
+    "new": [
+        {
+            "id": 0, 
+            "title": "【mosya】Progate が終わったら次におすすめの実践的なプログラミング学習サービス", 
+            "img": "/top/new/new-img0.webp" 
+        },
+        {
+            "id": 1,
+            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+            "img": "/top/new/new-img1.webp"
+        },
+        {
+            "id": 2,
+            "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
+            "img": "/top/new/new-img2.webp"
+        },
+        {
+            "id": 3,
+            "title": "SANGO Landのおすすめブロックまとめ【その他ブロック編】", 
+            "img": "/top/new/new-img3.webp"
+        },
+        {
+            "id": 4,
+            "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
+            "img": "/top/new/new-img3.webp"
+        },
+        {
+            "id": 5,
+            "title": "SANGO Landのおすすめブロックまとめ！活用例や使い方も解説", 
+            "img": "/top/new/new-img3.webp"
+        }
+    ],
+    "popular": [
+        {
+            "id": 0, 
+            "title": "【Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+            "img": "/top/popular/popular-img0.webp" 
+        },
+        {
+            "id": 1,
+            "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
+            "img": "/top/popular/popular-img1.webp" 
+        },
+        {
+            "id": 2,
+            "title": "【GAS】スプレッドシートで特定のキーワードを含む行を抽出してコピー", 
+            "img": "/top/popular/popular-img2.webp" 
+        },
+        {
+            "id": 3,
+            "title": "【テンプレート配布】Notionでタスク管理！シンプルすぎず複雑すぎないToDoリスト", 
+            "img": "/top/popular/popular-img3.webp" 
+        },
+        {
+            "id": 4,
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/top/popular/popular-img4.webp" 
+        },
+        {
+            "id": 5,
+            "title": "reveal.jsでサクッとスライド作成！VS Codeを使えば簡単", 
+            "img": "/top/popular/popular-img5.webp" 
+        }
     ]
 }

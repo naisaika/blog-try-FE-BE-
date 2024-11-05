@@ -1,14 +1,12 @@
-import { getSliderData } from "@/app/api/route";
 import Image from "next/image";
 import styles from "./CategorySection.module.scss"
+import { CATEGORY } from "@/data/data";
 
-export const CategorySection = async () => {
-
-    const categoryData = await getSliderData();
+export const CategorySection = () => {
 
   return (
     <ul className={styles.categoryList}>
-        {categoryData.category.map((data) => (
+        {CATEGORY.map((data) => (
             <li key={data.id} className={styles.categoryItem}>
                 <Image 
                   src={data.img} 

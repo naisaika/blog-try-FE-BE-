@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getSliderData } from "@/app/api/route";
+import { getSliderData } from "@/app/api/top/slider/route";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { SliderImgType } from "@/data/type";
+import { TopDataType } from "@/data/type";
 import styles from "./SlickSlider.module.scss";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
@@ -34,7 +34,7 @@ export default function SlickSlider({category}:SlickSliderProps) {
     },
   };
 
-  const [images, setImages] = useState<SliderImgType[]>([]);
+  const [images, setImages] = useState<TopDataType[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -51,13 +51,13 @@ export default function SlickSlider({category}:SlickSliderProps) {
         }
 
       } catch (error) {
-        console.error("Error fetching slider data:", error);
+        console.error("Error fetching top data:", error);
         setError("データの取得に失敗しました。");
       }
     };
 
     fetchData();
-  }, []);
+  }, [category]);
 
   if (error) {
     return <div>{error}</div>;

@@ -4,7 +4,7 @@ export interface NavType {
     link: string;
 }
 
-export interface SliderImgType {
+export interface TopDataType {
     id: number;
     title: string;
     img: string;
