@@ -3,6 +3,10 @@ import styles from "./TopPage.module.scss"
 import SlickSlider from "../slickSlider/SlickSlider"
 import { CategorySection } from "./categorySection/CategorySection";
 import { NewSection } from "./newSection/NewSection";
+import { Ramdom } from "./ramdomSection/Ramdom";
+import { getNewData } from "@/app/api/top/new/route";
+import { getPopularData } from "@/app/api/top/popular/route";
+import { getRamdomData } from "@/app/api/top/ramdom/route";
 
 interface TopSubTitleType {
   id: number;
@@ -20,7 +24,12 @@ const TOP_SUBTITLE:TopSubTitleType[] = [
   { id: 6, title: "Ramdom", text: "ランダム"},
 ]
 
-export const TopPage = () => {
+export const TopPage = async () => {
+
+  const newData = await getNewData();
+  const popularData = await getPopularData();
+  const ramdomData = await getRamdomData();
+
   return (
     <section className={styles.TopSection}>
         <div className={styles.topTitleSection}>
@@ -64,21 +73,19 @@ export const TopPage = () => {
           </div>
           <div className={styles.searchSection}>
             {TOP_SUBTITLE.filter(subtitle => subtitle.id === 4).map((subtitle) => (
-              <div key={subtitle.id} >
-                  <div className={styles.searchWrapper}>
-                    <h2 className={styles.subTitle}>{subtitle.title}</h2>
-                    <p className={styles.subTitleText}>{subtitle.text}</p>
-                    <div className={styles.inputContainer}>
-                      <input type="text" placeholder="検索ワードを入力" className={styles.searchInput}></input>
-                      <span className={styles.searchIconContainer}>
-                        <Image 
-                          src="/search-icon.png" alt="検索アイコン" 
-                          width={25} height={25} priority 
-                          className={styles.searchIcon}>
-                        </Image>
-                      </span>
-                    </div>
-                  </div>
+              <div className={styles.searchWrapper} key={subtitle.id}>
+                <h2 className={styles.subTitle}>{subtitle.title}</h2>
+                <p className={styles.subTitleText}>{subtitle.text}</p>
+                <div className={styles.inputContainer}>
+                  <input type="text" placeholder="検索ワードを入力" className={styles.searchInput}></input>
+                  <span className={styles.searchIconContainer}>
+                    <Image 
+                      src="/search-icon.png" alt="検索アイコン" 
+                      width={25} height={25} priority 
+                      className={styles.searchIcon}>
+                    </Image>
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -89,12 +96,24 @@ export const TopPage = () => {
                     <div className={styles.searchWrapper}>
                       <h2 className={styles.subTitle}>{subtitle.title}</h2>
                       <p className={styles.subTitleText}>{subtitle.text}</p>
-                      <NewSection/>
+                      <NewSection newData={newData} popularData={popularData}/>
                     </div>
                 </div>
               ))}
             </div>
-
+          </div>
+          <div className={styles.ramdomSection}>
+            <div className={styles.ramdomSectionWrapper}>
+              {TOP_SUBTITLE.filter(subtitle => subtitle.id === 6).map((subtitle) => (
+                <div key={subtitle.id} >
+                    <div className={styles.searchWrapper}>
+                      <h2 className={styles.subTitle}>{subtitle.title}</h2>
+                      <p className={styles.subTitleText}>{subtitle.text}</p>
+                      <Ramdom ramdomData={ramdomData}/>
+                    </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
     </section>

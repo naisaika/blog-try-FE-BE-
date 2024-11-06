@@ -1,7 +1,7 @@
 import { TopDataType } from "@/data/type";
 import { NextResponse } from 'next/server';
 
-export const getPopularData = async(): Promise<{ popular: TopDataType[] }> => {
+export const getPopularData = async(): Promise<TopDataType[]> => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BE_API_URL}/popular`);
 
     if (!res.ok) {

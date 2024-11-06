@@ -12,7 +12,7 @@
         cursor: pointer;
         transition: transform 0.6s ease, box-shadow 0.6s ease;
         &:hover {
-            transform: translate(0, -4px);
+            transform: translate(0, -6px);
             box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
         }
     }

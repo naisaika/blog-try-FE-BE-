@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const SubHeader = () => {
   return (
-    <div className={styles.nav}>
+    <header className={styles.nav}>
         <Link href="/">
             <Image src="/logo.webp" alt="ロゴ画像" width={350} height={60} priority className={styles.img}></Image>
         </Link>
@@ -18,6 +18,6 @@ export const SubHeader = () => {
                 ))}
             </ul>
         </nav>
-    </div>
+    </header>
   )
 }

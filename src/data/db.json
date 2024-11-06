@@ -143,12 +143,12 @@
         {
             "id": 4,
             "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
-            "img": "/top/new/new-img3.webp"
+            "img": "/top/new/new-img4.webp"
         },
         {
             "id": 5,
             "title": "SANGO Landのおすすめブロックまとめ！活用例や使い方も解説", 
-            "img": "/top/new/new-img3.webp"
+            "img": "/top/new/new-img5.webp"
         }
     ],
     "popular": [
@@ -182,5 +182,84 @@
             "title": "reveal.jsでサクッとスライド作成！VS Codeを使えば簡単", 
             "img": "/top/popular/popular-img5.webp" 
         }
+    ],
+    "ramdom": [
+        {
+            "id": 0, 
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/top/ramdom/ramdom-img0.webp" 
+        },
+        {
+            "id": 1,
+            "title": "SANGO Landのおすすめブロックまとめ【その他ブロック編】", 
+            "img": "/top/ramdom/ramdom-img1.webp" 
+        },
+        {
+            "id": 2,
+            "title": "ミスチルで一番使われている単語は「君」と「僕」", 
+            "img": "/top/ramdom/ramdom-img2.webp" 
+        },
+        {
+            "id": 3,
+            "title": "クイズアプリや診断サイトをBootstrap+jQueryで簡単に作成", 
+            "img": "/top/ramdom/ramdom-img3.webp"  
+        },
+        {
+            "id": 4,
+            "title": "ミスチルの歌詞をネガポジ分析してみた【日本語評価極性辞書】", 
+            "img": "/top/ramdom/ramdom-img4.webp" 
+        },
+        {
+            "id": 5,
+            "title": "【GAS】スプレッドシートで特定のキーワードを含む行を抽出してコピー", 
+            "img": "/top/ramdom/ramdom-img5.webp"  
+        }
+    ],
+    "category": [
+        { "id": 0, "text": "ブログ / WordPress", "count": "18" },
+        { "id": 1, "text": "Notion", "count": "12" },
+        { "id": 2, "text": "Python", "count": "14" },
+        { "id": 3, "text": "HTML/CSS/JavaScript", "count": "6" },
+        { "id": 4, "text": "Google App Script", "count": "1" },
+        { "id": 5, "text": "Arduino", "count": "3" },
+        { "id": 6, "text": "Web制作ノウハウ", "count": "3" },
+        { "id": 7, "text": "Udemy", "count": "1" }
+    ],
+    "tag": [
+        { "id": 0, "text": "WordPress", "count": "20" },
+        { "id": 1, "text": "ゼロから始めるブログ運営" , "count": "18"},
+        { "id": 2, "text": "SANGO", "count": "13" },
+        { "id": 3, "text": "web制作", "count": "9" },
+        { "id": 4, "text": "画像", "count": "7" },
+        { "id": 5, "text": "自動化", "count": "7" },
+        { "id": 6, "text": "分析", "count": "6" },
+        { "id": 7, "text": "プラグイン", "count": "5" },
+        { "id": 8, "text": "統計学", "count": "4" },
+        { "id": 9, "text": "ワードプレス", "count": "3" },
+        { "id": 10, "text": "Streamlit", "count": "3" },
+        { "id": 11, "text": "webアプリ", "count": "3" },
+        { "id": 12, "text": "ラジコン", "count": "3"},
+        { "id": 13, "text": "電子工作", "count": "3" },
+        { "id": 14, "text": "Udemy", "count": "2" },
+        { "id": 15, "text": "スプレッドシート", "count": "2" },
+        { "id": 16, "text": "Altair", "count": "1" },
+        { "id": 17, "text": "notion charts", "count": "1" },
+        { "id": 18, "text": "レビュー", "count": "1" },
+        { "id": 19, "text": "学習", "count": "1" }
+    ],
+    "blogMonth": [
+        { "id": 0, "date": "2023年7月", "count": "1" },
+        { "id": 1, "date": "2022年8月", "count": "1" },
+        { "id": 2, "date": "2022年7月", "count": "2" },
+        { "id": 3, "date": "2022年6月", "count": "2" },
+        { "id": 4, "date": "2022年5月", "count": "4" },
+        { "id": 5, "date": "2022年4月", "count": "1" },
+        { "id": 6, "date": "2022年3月", "count": "7" },
+        { "id": 7, "date": "2022年2月", "count": "3" },
+        { "id": 8, "date": "2021年12月", "count": "4" },
+        { "id": 8, "date": "2021年11月", "count": "3" },
+        { "id": 10, "date": "2021年10月", "count": "4" },
+        { "id": 11, "date": "2021年9月", "count": "9" },
+        { "id": 12, "date": "2021年8月", "count": "15" }
     ]
 }

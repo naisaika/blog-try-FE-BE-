@@ -1,7 +1,7 @@
 import { TopDataType } from "@/data/type";
 import { NextResponse } from 'next/server';
 
-export const getNewData = async(): Promise<{ new: TopDataType[]}> => {
+export const getNewData = async(): Promise<TopDataType[]> => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BE_API_URL}/new`);
 
     if (!res.ok) {

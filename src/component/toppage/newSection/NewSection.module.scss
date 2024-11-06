@@ -1,1 +1,23 @@
 @use "../../../../styles/common" as *;
+
+
+.newContainer {
+    display: flex;
+    flex-direction: column;
+    .newBtn {
+        background-color: $btn;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 10px 24px;
+        border-radius: 4px;
+        cursor: pointer;
+        align-self: center;
+        .newBtnText {
+            color: $white;
+            font-size: $size-16;
+            font-weight: 600;
+            margin: 4px 0 0 4px;
+        }
+    }
+}

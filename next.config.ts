@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   sassOptions: {
     silenceDeprecations: ["legacy-js-api"], 
-  }
+  },
+  images: {
+    domains: ['zatsugaku-engineer.com'], // 使用する外部ドメインをここに追加
+  },
   // experimental: {
   //   turbo: {
   //     rules: {
