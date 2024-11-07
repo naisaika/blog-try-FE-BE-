@@ -14,5 +14,11 @@ export const getBlogMonthData = async(): Promise<FooterBlogMonth[]> => {
 }
 
 export async function GET() {
-   
+   try {
+        const data = await getBlogMonthData();
+        return NextResponse.json(data);
+   } catch (error) {
+        const errorMessage = error instanceof Error? error.message : `Unknown Error`;
+        return NextResponse.json({error: errorMessage}, {status: 500});
+   }
 }

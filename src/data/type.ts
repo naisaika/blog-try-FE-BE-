@@ -13,6 +13,9 @@ export interface TopDataType {
 export interface FooterTitleType {
     id: number;
     img: string;
+    alt: string;
+    width: number;
+    height: number;
     title: string;
 }
 
@@ -31,4 +34,5 @@ export interface FooterBlogMonth {
     id: number;
     date: string;
     count: number;
+    value: string;
 }
