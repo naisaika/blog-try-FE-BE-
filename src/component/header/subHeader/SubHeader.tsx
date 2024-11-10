@@ -13,7 +13,7 @@ export const SubHeader = () => {
             <ul className={styles.navList}>
                 {NAV_LIST.map((list) => (
                     <Link href={list.link} key={list.id}>
-                    <li>{list.text}</li>
+                        <li className={styles.listText}>{list.text}</li>
                     </Link>
                 ))}
             </ul>

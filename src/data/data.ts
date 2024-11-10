@@ -33,7 +33,7 @@ export const CATEGORY:TopDataType[] = [
 export const FOOTER_TITLES:FooterTitleType[] = [
     { "id": 0, "img": "/footer/search-icon.png", "alt": "検索アイコン", "width": 20, "height": 20, "title": "検索" },
     { "id": 1, "img": "/footer/archive-icon.png", "alt": "アーカイブアイコン", "width": 20, "height": 16, "title": "アーカイブ" },
-    { "id": 2, "img": "/footer/category-icon.png", "alt": "カテゴリーアイコン", "width": 20, "height": 16, "title": "カテゴリー" },
+    { "id": 2, "img": "/footer/category-icon.png", "alt": "カテゴリアイコン", "width": 20, "height": 16, "title": "カテゴリ" },
     { "id": 3, "img": "/footer/tag-icon.png", "alt": "タグアイコン", "width": 20, "height": 22, "title": "タグ" },
     { "id": 4, "img": "/footer/person-icon.png","alt": "プロフィールアイコン", "width": 24, "height": 20, "title": "プロフィール" }
 ]

@@ -36,3 +36,9 @@ export interface FooterBlogMonth {
     count: number;
     value: string;
 }
+
+export interface NotioneerType {
+    id: number;
+    title: string;
+    img: string;
+}

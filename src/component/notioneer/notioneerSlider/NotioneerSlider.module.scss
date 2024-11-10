@@ -1,0 +1,174 @@
+@use "../../../../styles/common" as *;
+
+// .slideContainer {
+//     display: flex !important;
+//     flex-direction: column;
+//     border: none;
+//     justify-content: center;
+//     outline: none;
+//     margin: 0 115px;
+//     .slideImg {
+//         box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+//         cursor: pointer;
+//         transition: transform 0.6s ease, box-shadow 0.6s ease;
+//         &:hover {
+//             transform: translate(0, -6px);
+//             box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
+//         }
+//     }
+//     .slideText {
+//         width: 95%;
+//         padding: 0 8px;
+//         font-size: $size-14;
+//         margin-top: 8px;
+//         font-weight: 600;
+//         text-align: left;
+//         color: $btn;
+//         cursor: pointer;
+//     }
+
+// }
+// .customDot {
+//     background-color: #000;
+// }
+
+// :global(.custom-slick-prev)::before {
+//     display: none;
+// }
+
+// :global(.custom-active-dot) {
+//     width: 30px !important;
+//     height: 30px !important;
+//     background-color: #000 !important;
+//     border-radius: 50% !important;
+// }
+
+// :global(.slick-active button)::before {
+//     display: none;
+// }
+
+.sliderSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%; // カルーセル全体の横幅
+    margin: 0 auto;
+
+    .sliderContainer {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .prevButton {
+            position: absolute;
+            z-index: 5;
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0 10px;
+            left: 15%;
+            width: 35px;
+            height: 35px;
+            background-color: #adadad;
+            border-radius: 50%;
+            opacity: .7;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-bottom: solid 3px #000;
+                border-left: solid 3px #000;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 11px;
+                left: 13px;
+            }
+        }
+        .nextButton {
+            position: absolute;
+            z-index: 5;
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0 10px;
+            right: 15%;
+            width: 35px;
+            height: 35px;
+            background-color: #adadad;
+            border-radius: 50%;
+            opacity: .7;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-bottom: solid 3px #000;
+                border-right: solid 3px #000;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 11px;
+                right: 15px;
+            }
+        }
+    }
+}
+  
+  .carouselTrack {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 30px;
+    .slideText {
+        padding: 0 8px;
+        font-size: $size-15;
+        margin: 8px 0 16px;
+        font-weight: 600;
+        text-align: left;
+        color: $btn;
+        cursor: pointer;
+    }
+  }
+  
+  .slide {
+    transition: transform 0.5s ease;
+    .slideImg {
+      border-radius: 4px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+      cursor: pointer;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      &:hover {
+          transform: translate(0, -4px);
+          box-shadow: 0 5px 50px 0 rgba(0, 0, 0, .3);
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    list-style: none;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #6c6c6c;
+    width: 11px;
+    height: 11px;
+  }

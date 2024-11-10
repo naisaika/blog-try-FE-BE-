@@ -8,36 +8,16 @@
         max-width: 1000px;
         display: flex;
         justify-content: space-between;
+        gap: 24px;
         .footerRowContaier {
             display: flex;
             flex-direction: column;
             flex: 1;
-            margin: 0 16px;
-        }
-        .footerTitleContainer {
-            display: flex;
-            flex-direction: column;
-            .footerTitle {
-                display: flex;
-                align-items: center;
-                gap: 24px;
-                .footerTitleText {
-                    color: $btn;
-                    font-size: $size-22;
-                    font-weight: 600;
-                }
-            }
-            .line {
-                width: 100%;
-                height: 2px;
-                background-color: #cecece;
-                margin-top: 4px;
-            }
         }
         .inputContainer {
             display: flex;
             align-items: center;
-            margin: 20px 0;
+            margin: 24px 0;
             .searchInput {
                 padding: 10px;
                 background-color: $white;
@@ -60,7 +40,7 @@
             }
         }
         .selectBoxContainer {
-            margin: 20px 0;
+            margin: 24px 0;
             position: relative;
             .selectBox {
                 width: 100%;
@@ -95,7 +75,7 @@
             flex-direction: column;
             gap: 8px;
             .otherItem {
-                color: #57a7f1;
+                color: $skyblue;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -105,22 +85,103 @@
             list-style: none;
             display: flex;
             flex-direction: column;
+            margin: 24px 0;
             .categoryItem {
                 display: flex;
-                align-items: center;
-                padding: 20px 0 8px;
+                flex-direction: column;
+                padding: 20px 0 8px 16px;
+                .categoryTitle {
+                    display: flex;
+                    cursor: pointer;
+                    .categoryText {
+                        margin-left: 8px;
+                        font-weight: 600;
+                        transition: all .6s ease;
+                        &:hover {
+                            opacity: .3;
+                        }
+                        .categoryCount {
+                            margin-left: 8px;
+                            background-color: #8f8f8f;
+                            color: $white;
+                            font-size: $size-10;
+                            padding: 3px 0 16px;
+                            border-radius: 50%;
+                            width: 26px;
+                            height: 16px;
+                            display: inline-block;
+                            text-align: center;
+                        }
+                    }
+                }
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: #cecece;
+                    margin-top: 4px;
+                }
             }
-            .line {
-                width: 100%;
-                height: 2px;
-                background-color: #cecece;
-                margin-top: 4px;
+        }
+        .tagList {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 24px 0;
+            .tagItem {
+                color: #333;
+                font-size: $size-12;
+                border: solid 1px #e9e9e9;
+                padding: 4px 6px;
+                cursor: pointer;
+                font-weight: 300;
+                &:hover {
+                    border: solid 1px #bebebe; 
+                }
+                .tagCount {
+                    margin-left: 4px;
+                }
             }
         }
         .profileSection {
-            position: relative;
-            .avatar {
-                position: absolute;
+            margin: 24px 0;
+            .profileImgContainer {
+                position: relative;
+                .profImg {
+                    width: 100%;
+                    height: auto;
+                }
+                .avatar {
+                    position: absolute;
+                    bottom: -10%;
+                    left: 38%;
+                    border: solid 2px $white;
+                    border-radius: 50%;
+                }
+            }
+            .authorName {
+                padding: 60px 0 40px;
+                text-align: center;
+                font-weight: 700;
+                font-size: $size-20;
+                letter-spacing: .1em;
+            }
+            .profText {
+                padding: 0 16px;
+                color: #353535;
+                line-height: 2;
+                .linkColor {
+                    color: $skyblue;
+                }
+            }
+            .SNS {
+                border-radius: 50%;
+                margin: 32px auto;
+                display: block;
+            }
+            .linkColor {
+                color: $skyblue;
             }
         }
     }

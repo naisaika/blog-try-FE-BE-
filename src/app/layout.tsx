@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ScrollTopBtn } from "@/component/scrollTopBtn/ScrollTopBtn";
 
 export const metadata: Metadata = {
   title: "雑学エンジニアブログ | 雑多に学ぶプログラミング",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         {children}
+        <ScrollTopBtn/>
       </body>
     </html>
   );

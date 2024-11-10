@@ -5,6 +5,7 @@ import Link from "next/link"
 import { getCategoryData } from "@/app/api/footer/category/route"
 import { getTagData } from "@/app/api/footer/tag/route"
 import { getBlogMonthData } from "@/app/api/footer/blogmonth/route"
+import { FooterTitle } from "./footerTitle/FooterTitle"
 
 export const Footer = async() => {
 
@@ -20,19 +21,13 @@ export const Footer = async() => {
             <div key={title.id}>
               {title.id === 0 && (
                 <>
-                  <div className={styles.footerTitleContainer}>
-                    <div className={styles.footerTitle}>
-                      <Image
-                        src={title.img}
-                        alt={title.alt}
-                        width={title.width}
-                        height={title.height}
-                        priority
-                      />
-                      <h3 className={styles.footerTitleText}>{title.title}</h3>
-                    </div>
-                    <div className={styles.line}></div>
-                  </div>
+                  <FooterTitle 
+                    img={title.img} 
+                    alt={title.alt} 
+                    width={title.width} 
+                    height={title.height}
+                    title={title.title}
+                  />
                   <div className={styles.inputContainer}>
                     <input
                       type="text"
@@ -54,19 +49,13 @@ export const Footer = async() => {
               )}
               {title.id === 1 && (
                 <>
-                 <div className={styles.footerTitleContainer}>
-                  <div className={styles.footerTitle}>
-                      <Image
-                        src={title.img}
-                        alt={title.alt}
-                        width={title.width}
-                        height={title.height}
-                        priority
-                      />
-                      <h3>{title.title}</h3>
-                    </div>
-                    <div className={styles.line}></div>
-                  </div>
+                  <FooterTitle 
+                    img={title.img} 
+                    alt={title.alt} 
+                    width={title.width} 
+                    height={title.height}
+                    title={title.title}
+                  />
                   <div className={styles.selectBoxContainer}>
                     <label htmlFor="month-select" className={styles.srOnly}>
                       月を選択
@@ -97,23 +86,17 @@ export const Footer = async() => {
               <div className={styles.footerRow}>
                 {title.id === 2 && (
                   <>
-                    <div className={styles.footerTitleContainer}>
-                      <div className={styles.footerTitle}>
-                        <Image
-                          src={title.img}
-                          alt={title.alt}
-                          width={title.width}
-                          height={title.height}
-                          priority
-                        />
-                        <h3>{title.title}</h3>
-                      </div>
-                      <div className={styles.line}></div>
-                    </div>
+                    <FooterTitle 
+                      img={title.img} 
+                      alt={title.alt} 
+                      width={title.width} 
+                      height={title.height}
+                      title={title.title}
+                    />
                     <ul className={styles.categoryList}>
                       {categoryData.map((list) => (
-                        <>
-                          <li key={list.id} className={styles.categoryItem}>
+                        <li key={list.id} className={styles.categoryItem}>
+                          <div className={styles.categoryTitle}>
                             <Image
                               src="/footer/list-icon.png"
                               alt="カテゴリーアイコン"
@@ -121,40 +104,33 @@ export const Footer = async() => {
                               height={20}
                               priority
                             />
-                            <p>
+                            <p className={styles.categoryText}>
                               {list.text}
-                              <span>{list.count}</span>
+                              <span className={styles.categoryCount}>{list.count}</span>
                             </p>
-                            <div className={styles.line}></div>
-                          </li>
-                        </>
+                          </div>
+                        </li>
                       ))}
                     </ul>
                   </>
                 )}
                 {title.id === 3 && (
                   <>
-                    <div className={styles.footerTitleContainer}>
-                      <div className={styles.footerTitle}>
-                        <Image
-                          src={title.img}
-                          alt={title.alt}
-                          width={title.width}
-                          height={title.height}
-                          priority
-                        />
-                        <h3>{title.title}</h3>
-                      </div>
-                    <div className={styles.line}></div>
-                  </div>
-                  <ul>
-                    {tagData.map((list) => (
-                      <li key={list.id}>
-                        {`#${list.text}`}
-                        <span>{`(${list.count})`}</span>
-                      </li>
-                    ))}
-                  </ul>
+                    <FooterTitle 
+                      img={title.img} 
+                      alt={title.alt} 
+                      width={title.width} 
+                      height={title.height}
+                      title={title.title}
+                    />
+                    <ul className={styles.tagList}>
+                      {tagData.map((list) => (
+                        <li key={list.id} className={styles.tagItem}>
+                          {`#${list.text}`}
+                          <span className={styles.tagCount}>{`(${list.count})`}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </>
                 )}
               </div>
@@ -165,40 +141,38 @@ export const Footer = async() => {
           {FOOTER_TITLES.map((title) => (
             title.id === 4 ? (
               <div key={title.id} className={styles.footerRow}>
-                <div className={styles.footerTitleContainer}>
-                  <div className={styles.footerTitle}>
-                    <Image
-                      src={title.img}
-                      alt={title.alt}
-                      width={title.width}
-                      height={title.height}
-                      priority
-                    />
-                    <h3>{title.title}</h3>
-                  </div>
-                  <div className={styles.line}></div>
-                </div>
+                <FooterTitle 
+                  img={title.img} 
+                  alt={title.alt} 
+                  width={title.width} 
+                  height={title.height}
+                  title={title.title}
+                />
                 <div className={styles.profileSection}>
-                  <Image
-                    src="https://zatsugaku-engineer.com/wp-content/uploads/2022/04/image-min.gif"
-                    alt="プロフィール画像"
-                    width={280}
-                    height={280}
-                    priority
-                  />
-                  <Image
-                    src="/footer/avatar.webp"
-                    alt="アバター画像"
-                    width={80}
-                    height={80}
-                    priority
-                    className={styles.avatar}
-                  />
-                  <p>チャベス</p>
-                  <p>
+                  <div className={styles.profileImgContainer}>
+                    <Image
+                      src="https://zatsugaku-engineer.com/wp-content/uploads/2022/04/image-min.gif"
+                      alt="プロフィール画像"
+                      width={280}
+                      height={280}
+                      priority
+                      className={styles.profImg}
+                    />
+                    <Image
+                      src="/footer/avatar.webp"
+                      alt="アバター画像"
+                      width={80}
+                      height={80}
+                      priority
+                      className={styles.avatar}
+                    />
+                  </div>
+                  <p className={styles.authorName}>チャベス</p>
+                  <p className={styles.profText}>
                     機械機器メーカーで研究開発をしている機械系エンジニアです。<br />
                     Notion、SANGO（WordPress）、Pythonが好きです。<br />
-                    詳細プロフィールは<Link href="#">こちら</Link>。<Link href="#">note</Link>にNotionの記事も書いています。<br />
+                    詳細プロフィールは<Link href="#" className={styles.linkColor}>こちら</Link>。
+                    <Link href="#" className={styles.linkColor}>note</Link>にNotionの記事も書いています。<br />
                     Notion公式資格のNotion Essentials Badge取得。
                   </p>
                   <Image
@@ -207,9 +181,10 @@ export const Footer = async() => {
                     width={40}
                     height={40}
                     priority
+                    className={styles.SNS}
                   />
                   <p>
-                    <Link href="#">WP-Search</Link>にサイト事例として掲載されています。
+                    <Link href="#" className={styles.linkColor}>WP-Search</Link>にサイト事例として掲載されています。
                   </p>
                 </div>
               </div>

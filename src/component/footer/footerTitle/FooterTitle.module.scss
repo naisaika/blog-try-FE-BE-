@@ -1,0 +1,23 @@
+@use "../../../../styles/common" as *;
+
+.footerTitleContainer {
+    display: flex;
+    flex-direction: column;
+    .footerTitle {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        .footerTitleText {
+            color: $btn;
+            font-size: $size-20;
+            font-weight: 600;
+        }
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #cecece;
+        margin-top: 4px;
+    }
+}

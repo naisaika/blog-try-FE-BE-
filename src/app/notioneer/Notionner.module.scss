@@ -1,1 +1,52 @@
 @use "../../../styles/common" as *;
+
+.notioneerTitleSection {
+    background: url('/notioneer/notioneer-bg.jpg'),
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 20vh 0;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .notioneerText{ 
+        margin: 20px 0 40px;
+        letter-spacing: .05em;
+        font-size: $size-15;
+    }
+    .useNotioneerLink {
+        background-color: #b7b7b7;
+        padding: 12px 36px;
+        border-radius: 50px;
+        box-shadow: 0 0 6px 0 #818181;
+        font-size: $size-16;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        transition: all .6s ease;
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 25px 10px #8f8f8f;
+        }
+        &::after {
+            content: '';
+            display: inline-block;
+            border-bottom: solid 3px #fff;
+            border-right: solid 3px #fff;
+            width: 8px;
+            height: 8px;
+            transform: rotate(-45deg);
+            margin: 0 0 2px 4px;
+        }
+    }
+}
+
+.sliderSection {
+    max-width: 1000px;
+    margin: 40px auto ;
+}

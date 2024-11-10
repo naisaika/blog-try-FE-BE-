@@ -262,5 +262,75 @@
         { "id": 11, "date": "2021年10月", "count": "4", "value": "2021年10月" },
         { "id": 12, "date": "2021年9月", "count": "9", "value": "2021年9月" },
         { "id": 13, "date": "2021年8月", "count": "15", "value": "2021年8月" }
+    ],
+    "notioneer": [
+        {
+            "id": 0, 
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/notioneer/slider/slide-img0.webp" 
+        },
+        {
+            "id": 1,
+            "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
+            "img": "/notioneer/slider/slide-img1.webp"
+        },
+        {
+            "id": 2,
+            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+            "img": "/notioneer/slider/slide-img2.webp"
+        },
+        {
+            "id": 3,
+            "title": "Notionに繰り返しタスクを自動で追加できる「Noway Task」の使い", 
+            "img": "/notioneer/slider/slide-img3.webp"
+        },
+        {
+            "id": 4,
+            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+            "img": "/notioneer/slider/slide-img4.webp"
+        },
+        {
+            "id": 5,
+            "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+            "img": "/notioneer/slider/slide-img5.webp"
+        }
+    ],
+    "notioneerNewPosts": [
+        {
+            "id": 0, 
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/notioneer/slider/slide-img4.webp" ,
+            "createdAt": "2022年11月11日"
+        },
+        {
+            "id": 1,
+            "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
+            "img": "/notioneer/slider/slide-img1.webp",
+            "createdAt": "2022年11月11日"
+        },
+        {
+            "id": 2,
+            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+            "img": "/notioneer/slider/slide-img2.webp",
+            "createdAt": "2022年11月11日"
+        },
+        {
+            "id": 3,
+            "title": "Notionに繰り返しタスクを自動で追加できる「Noway Task」の使い", 
+            "img": "/notioneer/slider/slide-img3.webp",
+            "createdAt": "2022年11月11日"
+        },
+        {
+            "id": 4,
+            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+            "img": "/notioneer/slider/slide-img4.webp",
+            "createdAt": "2022年11月11日"
+        },
+        {
+            "id": 5,
+            "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+            "img": "/notioneer/slider/slide-img5.webp",
+            "createdAt": "2022年11月11日"
+        }
     ]
 }
