@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import { TopDataType } from "@/data/type";
 import styles from "./NotioneerSlider.module.scss";
-import { getNotioneerSlideData } from "@/app/api/notioneer/route";
+import { getNotioneerSlideData } from "@/app/api/notioneer/slider/route";
 
 export default function NotioneerSlider() {
   const [images, setImages] = useState<TopDataType[]>([]);
@@ -81,7 +81,7 @@ export default function NotioneerSlider() {
         <div className={styles.carouselTrack}>
           {getSectionImages().map((img, index) => (
             <div
-              key={img.id || index} // img.idが存在しない場合はindexでキーを設定
+              key={`${img.id}-${currentSection}-${index}`} // img.idが存在しない場合はindexでキーを設定
               className={`${styles.slide} ${index === 0 || index === getSectionImages().length - 1 ? styles.partialSlide : ""}`}
             >
               <Image src={img.img} alt={`slider画像${img.id}`} 

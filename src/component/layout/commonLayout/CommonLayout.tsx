@@ -1,12 +1,12 @@
+import { Footer } from "@/component/footer/commonfooter/CommonFooter";
 import { SubHeader } from "../../header/subHeader/SubHeader";
-import { Footer } from "@/component/footer/Footer";
 
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
     return (
       <>
-        <SubHeader />
+        <SubHeader/>
         {children}
-        <Footer />
+        <Footer/>
       </>
     );
   };

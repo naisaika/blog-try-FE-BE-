@@ -22,6 +22,7 @@ export interface FooterTitleType {
 export interface FooterLinkType {
     id: number;
     text: string;
+    link: string;
 }
 
 export interface FooterListType {
@@ -42,3 +43,11 @@ export interface NotioneerType {
     title: string;
     img: string;
 }
+
+export interface NewPostsType {
+    id: number;
+    title: string;
+    img: string;
+    createdAt: string;
+}
+

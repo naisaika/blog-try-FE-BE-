@@ -1,11 +1,12 @@
 import Image from "next/image"
-import styles from "./Footer.module.scss"
+import styles from "./CommonFooter.module.scss"
 import { FOOTER_TITLES, FOOTER_OTHERS } from "@/data/data"
 import Link from "next/link"
 import { getCategoryData } from "@/app/api/footer/category/route"
 import { getTagData } from "@/app/api/footer/tag/route"
 import { getBlogMonthData } from "@/app/api/footer/blogmonth/route"
-import { FooterTitle } from "./footerTitle/FooterTitle"
+import { FooterTitle } from "../footerTitle/FooterTitle"
+import { FooterSearchSection } from "../footerSearchSection/FooterSearchSection"
 
 export const Footer = async() => {
 
@@ -28,23 +29,7 @@ export const Footer = async() => {
                     height={title.height}
                     title={title.title}
                   />
-                  <div className={styles.inputContainer}>
-                    <input
-                      type="text"
-                      placeholder="検索ワードを入力"
-                      className={styles.searchInput}
-                    />
-                    <span className={styles.searchIconContainer}>
-                      <Image
-                        src="/search-icon.png"
-                        alt="検索アイコン"
-                        width={20}
-                        height={20}
-                        priority
-                        className={styles.searchIcon}
-                      />
-                    </span>
-                  </div>
+                  <FooterSearchSection/>
                 </>
               )}
               {title.id === 1 && (
@@ -70,7 +55,7 @@ export const Footer = async() => {
                   </div>
                   <ul className={styles.othersList}>
                     {FOOTER_OTHERS.map((other) => (
-                      <Link href="#" key={other.id} className={styles.otherItem}>
+                      <Link href={other.link} key={other.id} className={styles.otherItem}>
                         <li>{other.text}</li>
                       </Link>
                     ))}

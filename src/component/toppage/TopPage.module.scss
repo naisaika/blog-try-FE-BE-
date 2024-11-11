@@ -29,31 +29,6 @@
         margin: 24px 0;
         letter-spacing: .2em;
     }
-    .inputContainer {
-        position: relative;
-        .topSearchInput {
-            margin-top: 16px;
-            padding: 16px;
-            border-radius: 50px;
-            background-color: transparent;
-            border: solid 1px $white;
-            outline: none;
-            position: relative;
-            width: 100%;
-            caret-color: #fff;
-            &::placeholder {
-                color: $white;
-                letter-spacing: .1em;
-            }
-        }
-        .searchIcon {
-            position: absolute;
-            bottom: 22%;
-            right: 2%;
-            cursor: pointer;
-        }
-    }
-
 }
 
 .subSection {

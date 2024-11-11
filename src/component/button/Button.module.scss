@@ -1,0 +1,25 @@
+@use "../../../styles/common" as *;
+
+.btn {
+    padding: 12px 70px 12px 60px;
+    border: solid 1px #000;
+    outline: none;
+    background-color: $white;
+    font-size: $size-16;
+    font-weight: 600;
+    color: $btn;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s ease;
+
+    .btnImg {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover .btnImg {
+        transform: translateX(20px);
+    }
+}

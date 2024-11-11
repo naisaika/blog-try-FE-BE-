@@ -5,7 +5,6 @@ const BlogWordpress = () => {
     <CommonLayout>
         <div>BlogWordpress</div>
     </CommonLayout>
-
   )
 }
 

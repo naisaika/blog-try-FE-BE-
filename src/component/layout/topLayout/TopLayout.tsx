@@ -1,5 +1,5 @@
 
-import { Footer } from "@/component/footer/Footer";
+import { Footer } from "@/component/footer/commonfooter/CommonFooter";
 import { TopHeader } from "@/component/header/topHeader/TopHeader";
 
 const TopLayout = ({ children }: { children: React.ReactNode }) => {

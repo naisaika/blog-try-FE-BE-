@@ -39,7 +39,20 @@ export const FOOTER_TITLES:FooterTitleType[] = [
 ]
 
 export const FOOTER_OTHERS:FooterLinkType[] = [
-    { "id": 0, "text": "サイトマップ" },
-    { "id": 1, "text": "お問い合わせ" },
-    { "id": 2, "text": "プライバシーポリシー" }
+    { "id": 0, "text": "サイトマップ", "link": "#" },
+    { "id": 1, "text": "お問い合わせ", "link": "#" },
+    { "id": 2, "text": "プライバシーポリシー", "link": "#" }
+]
+
+export const NOTIONEER_FOOTER_TITLE:FooterTitleType[] = [
+    { "id": 0, "img": "/footer/pencil-icon.png", "alt": "aboutアイコン", "width": 28, "height": 30, "title": "このサイトについて" },
+    { "id": 1, "img": "/footer/tag-icon.png", "alt": "リンクアイコン", "width": 20, "height": 22, "title": "リンク" },
+    { "id": 2, "img": "/footer/person-icon.png","alt": "プロフィールアイコン", "width": 24, "height": 20, "title": "プロフィール" }
+]
+
+export const NOTIONEER_FOOTER_LINK:FooterLinkType[] = [
+    { "id": 0, "text": "雑学エンジニアブログ", "link": "/" },
+    { "id": 1, "text": "Notionのページ", "link": "#" },
+    { "id": 2, "text": "note", "link": "#" },
+    { "id": 3, "text": "チャベログ", "link": "#" },
 ]

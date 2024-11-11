@@ -299,38 +299,38 @@
         {
             "id": 0, 
             "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
-            "img": "/notioneer/slider/slide-img4.webp" ,
+            "img": "/notioneer/newpost/newpost-img0.webp" ,
             "createdAt": "2022年12月11日"
         },
         {
             "id": 1,
             "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
-            "img": "/notioneer/slider/slide-img1.webp",
+            "img": "/notioneer/newpost/newpost-img1.webp" ,
             "createdAt": "2022年12月11日"
         },
         {
             "id": 2,
-            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
-            "img": "/notioneer/slider/slide-img2.webp",
-            "createdAt": "2022年11月11日"
+            "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
+            "img": "/notioneer/newpost/newpost-img2.webp" ,
+            "createdAt": "2022年8月25日"
         },
         {
             "id": 3,
-            "title": "Notionに繰り返しタスクを自動で追加できる「Noway Task」の使い", 
-            "img": "/notioneer/slider/slide-img3.webp",
-            "createdAt": "2022年11月11日"
+            "title": "Notionに繰り返しタスクを自動で追加できる「Noway Task」の使い方", 
+            "img": "/notioneer/newpost/newpost-img3.webp" ,
+            "createdAt": "2022年8月25日"
         },
         {
             "id": 4,
-            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
-            "img": "/notioneer/slider/slide-img4.webp",
-            "createdAt": "2022年11月11日"
+            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+            "img": "/notioneer/newpost/newpost-img4.webp" ,
+            "createdAt": "2022年9月25日"
         },
         {
             "id": 5,
-            "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
-            "img": "/notioneer/slider/slide-img5.webp",
-            "createdAt": "2022年11月11日"
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/notioneer/newpost/newpost-img5.webp" ,
+            "createdAt": "2022年8月25日"
         }
     ]
 }

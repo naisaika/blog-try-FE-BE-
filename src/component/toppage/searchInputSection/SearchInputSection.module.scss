@@ -1,0 +1,31 @@
+@use "../../../../styles/common" as *;
+
+.inputContainer {
+    position: relative;
+    .topSearchInput {
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 50px;
+        background-color: transparent;
+        border: solid 1px $white;
+        outline: none;
+        position: relative;
+        width: 100%;
+        caret-color: #fff;
+        color: $white;
+        &::placeholder {
+            color: $white;
+            letter-spacing: .1em;
+        }
+    }
+    .submitBtn {
+        position: absolute;
+        bottom: 15%;
+        right: 2%;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+}

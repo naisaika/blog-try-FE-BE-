@@ -1,12 +1,12 @@
-import CommonLayout from "@/component/layout/commonLayout/CommonLayout"
 import NotioneerSlider from "@/component/notioneer/notioneerSlider/NotioneerSlider"
-// import Image from "next/image"
 import Link from "next/link"
 import styles from "./Notionner.module.scss"
+import { NewPosts } from "@/component/notioneer/newPosts/NewPosts"
+import NotioneerLayout from "@/component/layout/notioneerLayout/NotioneerLayout"
 
 const Notioneer = () => {
   return (
-    <CommonLayout>
+    <NotioneerLayout>
         <section>
           <div className={styles.notioneerTitleSection}>
             <h1 className={styles.notioneerTitle}>Notioneer!!</h1>
@@ -18,10 +18,10 @@ const Notioneer = () => {
             <NotioneerSlider/>
           </div>
           <div>
-            <h2>New Posts</h2>
+            <NewPosts/>
           </div>
         </section>
-    </CommonLayout>
+    </NotioneerLayout>
   )
 }
 

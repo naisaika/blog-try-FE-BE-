@@ -7,6 +7,7 @@ import { Ramdom } from "./ramdomSection/Ramdom";
 import { getNewData } from "@/app/api/top/new/route";
 import { getPopularData } from "@/app/api/top/popular/route";
 import { getRamdomData } from "@/app/api/top/ramdom/route";
+import { SearchInputSection } from "./searchInputSection/SearchInputSection";
 
 interface TopSubTitleType {
   id: number;
@@ -39,10 +40,7 @@ export const TopPage = async () => {
                 機械系エンジニアが「雑多に学んだ」プログラミングネタを発信するブログ<br></br>
                 Notion、SANGO（WordPress）、Pythonが中心
             </p>
-            <div className={styles.inputContainer}>
-              <input type="text" placeholder="キーワードを入力してください" className={styles.topSearchInput}></input>
-              <Image src="/search-icon.png" alt="検索アイコン" width={25} height={25} priority className={styles.searchIcon}></Image>
-            </div>
+            <SearchInputSection/>
           </div>
         </div>
         <div className={styles.subSection}>
