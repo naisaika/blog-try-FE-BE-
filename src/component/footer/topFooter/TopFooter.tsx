@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "./CommonFooter.module.scss"
+import styles from "./TopFooter.module.scss"
 import { FOOTER_TITLES, FOOTER_OTHERS } from "@/data/data"
 import Link from "next/link"
 import { getCategoryData } from "@/app/api/footer/category/route"
@@ -8,7 +8,7 @@ import { getBlogMonthData } from "@/app/api/footer/blogmonth/route"
 import { FooterTitle } from "../footerTitle/FooterTitle"
 import { FooterSearchSection } from "../footerSearchSection/FooterSearchSection"
 
-export const CommonFooter = async() => {
+export const TopFooter = async() => {
 
   const categoryData = await getCategoryData();
   const tagData = await getTagData();
@@ -42,10 +42,10 @@ export const CommonFooter = async() => {
                     title={title.title}
                   />
                   <div className={styles.selectBoxContainer}>
-                    <label htmlFor="monthSelect" className={styles.srOnly}>
+                    <label htmlFor="month-select" className={styles.srOnly}>
                       月を選択
                     </label>
-                    <select id="monthSelect" defaultValue="" className={styles.selectBox}>
+                    <select id="month-select" defaultValue="" className={styles.selectBox}>
                       {blogMonthData.map((data) => (
                         <option value={data.value} key={data.id}>
                           {`${data.date}${data.count ? `(${data.count})` : ""}`}
@@ -168,10 +168,10 @@ export const CommonFooter = async() => {
                     priority
                     className={styles.SNS}
                   />
-                  <p>
-                    <Link href="#" className={styles.linkColor}>WP-Search</Link>にサイト事例として掲載されています。
-                  </p>
                 </div>
+                <p className={styles.endText}>
+                  <Link href="#" className={styles.linkColor}>WP-Search</Link>にサイト事例として掲載されています。
+                </p>
               </div>
             ) : null
           ))}

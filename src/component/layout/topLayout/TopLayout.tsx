@@ -1,5 +1,4 @@
-
-import { Footer } from "@/component/footer/commonfooter/CommonFooter";
+import { TopFooter } from "@/component/footer/topFooter/TopFooter";
 import { TopHeader } from "@/component/header/topHeader/TopHeader";
 
 const TopLayout = ({ children }: { children: React.ReactNode }) => {
@@ -7,7 +6,7 @@ const TopLayout = ({ children }: { children: React.ReactNode }) => {
       <>
         <TopHeader />
         {children}
-        <Footer />
+        <TopFooter />
       </>
     );
   };

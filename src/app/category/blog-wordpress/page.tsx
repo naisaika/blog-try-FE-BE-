@@ -1,10 +1,11 @@
-import CommonLayout from "@/component/layout/commonLayout/CommonLayout"
+import AsideLayout from "@/component/layout/asideLayout/AsideLayout"
+import { MainPageTitle } from "@/component/mainPageTitle/MainPageTitle"
 
 const BlogWordpress = () => {
   return (
-    <CommonLayout>
-        <div>BlogWordpress</div>
-    </CommonLayout>
+    <AsideLayout>
+      <MainPageTitle/>
+    </AsideLayout>
   )
 }
 

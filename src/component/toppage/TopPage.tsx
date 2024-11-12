@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from "./TopPage.module.scss"
 import SlickSlider from "../slickSlider/SlickSlider"
 import { CategorySection } from "./categorySection/CategorySection";
@@ -8,6 +7,7 @@ import { getNewData } from "@/app/api/top/new/route";
 import { getPopularData } from "@/app/api/top/popular/route";
 import { getRamdomData } from "@/app/api/top/ramdom/route";
 import { SearchInputSection } from "./searchInputSection/SearchInputSection";
+import { SearchSection } from "./searchSection/SearchSection";
 
 interface TopSubTitleType {
   id: number;
@@ -74,16 +74,7 @@ export const TopPage = async () => {
               <div className={styles.searchWrapper} key={subtitle.id}>
                 <h2 className={styles.subTitle}>{subtitle.title}</h2>
                 <p className={styles.subTitleText}>{subtitle.text}</p>
-                <div className={styles.inputContainer}>
-                  <input type="text" placeholder="検索ワードを入力" className={styles.searchInput}></input>
-                  <span className={styles.searchIconContainer}>
-                    <Image 
-                      src="/search-icon.png" alt="検索アイコン" 
-                      width={25} height={25} priority 
-                      className={styles.searchIcon}>
-                    </Image>
-                  </span>
-                </div>
+                <SearchSection/>
               </div>
             ))}
           </div>

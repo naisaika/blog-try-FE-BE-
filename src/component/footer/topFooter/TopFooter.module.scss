@@ -5,7 +5,7 @@
     .footerWrapper {
         padding: 80px 16px;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1000px;
         display: flex;
         justify-content: space-between;
         gap: 24px;
@@ -121,6 +121,7 @@
         }
         .profileSection {
             margin: 24px 0;
+            background-color: $white;
             .profileImgContainer {
                 position: relative;
                 .profImg {
@@ -155,12 +156,14 @@
                 margin: 32px auto;
                 display: block;
             }
+        }
+        .endText {
+            color: #353535;
             .linkColor {
                 color: $skyblue;
             }
         }
-    }
-    
+    }  
 }
 
 .srOnly {

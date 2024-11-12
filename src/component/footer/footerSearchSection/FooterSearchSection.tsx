@@ -11,6 +11,10 @@ export const FooterSearchSection = () => {
     const handleSubmit = async(e:FormEvent) => {
         e.preventDefault();
 
+        if(inputText === "") {
+            return;
+        }      
+
         try {
             const response = await fetch("api/search", {
                 method: "POST",
@@ -45,12 +49,12 @@ export const FooterSearchSection = () => {
         />
         <button type="submit" aria-label="検索" className={styles.searchIconBtn}>
             <Image
-            src="/search-icon.png"
-            alt="検索アイコン"
-            width={20}
-            height={20}
-            priority
-            className={styles.searchIcon}
+                src="/search-icon.png"
+                alt="検索アイコン"
+                width={20}
+                height={20}
+                priority
+                className={styles.searchIcon}
             />
         </button>
     </form>
