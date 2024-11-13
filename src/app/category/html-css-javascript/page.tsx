@@ -1,11 +1,13 @@
-import CommonLayout from "@/component/layout/commonLayout/CommonLayout"
+import { HtmlCssJavascriptList } from "@/component/htmlcssjavascript/htmlcssjavascriptList/HtmlCssJavascriptList"
+import AsideLayout from "@/component/layout/asideLayout/AsideLayout"
+import { MainPageTitle } from "@/component/mainPageTitle/MainPageTitle"
 
 const HtmlCssJavascript = () => {
   return (
-    <CommonLayout>
-        <div>HtmlCssJavascript</div>
-    </CommonLayout>
-
+    <AsideLayout>
+      <MainPageTitle/>
+      <HtmlCssJavascriptList/>
+    </AsideLayout>
   )
 }
 

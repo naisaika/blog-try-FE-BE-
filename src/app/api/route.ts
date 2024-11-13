@@ -1,13 +1,13 @@
-import { SliderImgType } from "@/data/type";
+import { TopDataType } from "@/data/type";
 import { NextResponse } from 'next/server';
 
 export const getSliderData = async(): Promise<
     { 
-        notion: SliderImgType[], 
-        sango: SliderImgType[], 
-        python: SliderImgType[], 
-        category: SliderImgType[],
-        new: SliderImgType[] 
+        notion: TopDataType[], 
+        sango: TopDataType[], 
+        python: TopDataType[], 
+        category: TopDataType[],
+        new: TopDataType[] 
     }> => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BE_API_URL}/posts`);
 

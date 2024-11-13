@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Button.module.scss";
+import Link from "next/link";
 
 interface ButtonType {
     children: React.ReactNode;
@@ -7,9 +8,9 @@ interface ButtonType {
 
 export const Button = ({children}:ButtonType) => {
   return (
-    <button type="button" className={styles.btn}>
+    <Link href="/category/notion" className={styles.btn}>
         <span>{children}</span>
         <Image src="/btn-icon.svg" alt="ボタンアイコン" width={50} height={8} priority className={styles.btnImg}></Image>
-    </button>
+    </Link>
   )
 }

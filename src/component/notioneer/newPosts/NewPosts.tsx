@@ -22,7 +22,7 @@ export const NewPosts = async() => {
                         <Image src={data.img} alt="new post画像" width={318} height={184} priority className={styles.newPostImg}></Image>
                         <p className={styles.newPostText}>{data.title}</p>
                         <span className={styles.newPostDate}>
-                            <Image src="/notioneer/update-icon.png" alt="更新アイコン" width={20} height={14} priority></Image>
+                            <Image src="/update-icon.png" alt="更新アイコン" width={20} height={14} priority></Image>
                             {data.createdAt}
                         </span>
                     </li>

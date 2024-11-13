@@ -1,10 +1,13 @@
-import CommonLayout from "@/component/layout/commonLayout/CommonLayout"
+import AsideLayout from "@/component/layout/asideLayout/AsideLayout"
+import { MainPageTitle } from "@/component/mainPageTitle/MainPageTitle"
+import { PythonList } from "@/component/python/pythonList/PythonList"
 
 const Python = () => {
   return (
-    <CommonLayout>
-        <div>Python</div>
-    </CommonLayout>
+    <AsideLayout>
+      <MainPageTitle/>
+      <PythonList/>
+    </AsideLayout>
   )
 }
 

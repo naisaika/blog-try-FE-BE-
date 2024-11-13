@@ -1,0 +1,65 @@
+@use "../../../styles/common" as *;
+
+.breadCrumbList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.breadCrumbItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 6px solid #bebebe;
+        border-right: 0;
+        border-radius: 4px;
+        margin-top: 3px;
+    }
+    .breadCrumbLink {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        .linkText {
+            font-size: $size-14;
+            margin-top: 4px;
+            color: $skyblue;
+        }
+        .linkText2 {
+            font-size: $size-14;
+            margin: 6px 0 0 8px;
+            color: $skyblue;
+        }
+    }
+    &:hover {
+        .homeImg {
+            display: none;
+        }
+        .homeImg__Hover {
+            display: block;
+        }
+        .linkText {
+            color: #a8a8a8;
+        }
+    }
+}
+
+.linkText__last {
+    font-size: $size-14;
+    margin: 5px 0 0 8px;
+    color: #565656;
+}
+
+.homeImg {
+    display: block;
+}
+
+.homeImg__Hover {
+    display: none;
+}
+

@@ -2,40 +2,11 @@
 
 import Image from "next/image"
 import styles from "./SearchInputSection.module.scss"
-import { useState, FormEvent } from "react";
+import { useSearchKeyword } from "@/hooks/useSearchKeyword";
 
 export const SearchInputSection = () => {
 
-    const [inputText, setInputText] = useState("");
-
-    const handleSubmit = async(e: FormEvent) => {
-        e.preventDefault();
-
-        if(inputText === "") {
-            return;
-          }      
-
-        try {
-            const response = await fetch ("/api/search", {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify({ keyword: inputText })
-            });
-
-            if(response.ok) {
-                const data = await response.json();
-                console.log("検索結果:", data);
-                // dataを表示、またはstateに保存しUIに反映する処理を追加
-                setInputText("");
-            } else {
-                console.error("検索に失敗しました。")
-            }
-        } catch (error) {
-            console.error("エラーが発生しました:", error);
-        }
-    }
+    const {inputText, searchResult, onChangeInput, handleSubmit} = useSearchKeyword();
 
   return (
     <form onSubmit={handleSubmit} className={styles.inputContainer}>
@@ -45,7 +16,7 @@ export const SearchInputSection = () => {
             value={inputText}
             placeholder="キーワードを入力してください" 
             className={styles.topSearchInput}
-            onChange={(e) => setInputText(e.target.value)}>
+            onChange={onChangeInput}>
         </input>
         <button type="submit" aria-label="検索" className={styles.submitBtn}>
             <Image src="/search-icon.png" alt="検索アイコン" width={25} height={25} priority></Image>

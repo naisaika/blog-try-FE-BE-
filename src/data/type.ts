@@ -10,6 +10,13 @@ export interface TopDataType {
     img: string;
 }
 
+export interface TopCategoryType {
+    id: number;
+    title: string;
+    img: string;
+    link: string;
+}
+
 export interface FooterTitleType {
     id: number;
     img: string;
@@ -51,3 +58,9 @@ export interface NewPostsType {
     createdAt: string;
 }
 
+export interface ArticleListType {
+    id: number;
+    title: string;
+    img: string;
+    createdAt: string;
+}

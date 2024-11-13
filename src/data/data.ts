@@ -1,4 +1,4 @@
-import { NavType, TopDataType, FooterLinkType, FooterTitleType } from "./type"
+import { NavType, TopCategoryType, FooterLinkType, FooterTitleType } from "./type"
 
 export const NAV_LIST:NavType[] = [
     { id: 0, text: "Notioneer!! (Notionのページ)", link: "/notioneer" },
@@ -7,26 +7,30 @@ export const NAV_LIST:NavType[] = [
     { id: 3, text: "Python", link: "/category/python" },
 ]
 
-export const CATEGORY:TopDataType[] = [
+export const CATEGORY:TopCategoryType[] = [
     {
-        "id": 0, 
-        "title": "Notion", 
-        "img": "/top/category/notion-logo.webp" 
+        id: 0, 
+        title: "Notion", 
+        img: "/top/category/notion-logo.webp",
+        link: "/notioneer"
     },
     {
-        "id": 1,
-        "title": "SANGO(WordPress)", 
-        "img": "/top/category/sango.webp" 
+        id: 1,
+        title: "SANGO(WordPress)", 
+        img: "/top/category/sango.webp",
+        link: "/category/blog-wordpress" 
     },
     {
-        "id": 2,
-        "title": "HTML/CSS/JS", 
-        "img": "/top/category/htmlcssjs.webp"
+        id: 2,
+        title: "HTML/CSS/JS", 
+        img: "/top/category/htmlcssjs.webp",
+        link: "/category/html-css-javascript"
     },
     {
-        "id": 3,
-        "title": "Python", 
-        "img": "/top/category/python-logo.webp" 
+        id: 3,
+        title: "Python", 
+        img: "/top/category/python-logo.webp",
+        link: "/category/python" 
     }
 ]
 
@@ -56,3 +60,9 @@ export const NOTIONEER_FOOTER_LINK:FooterLinkType[] = [
     { "id": 2, "text": "note", "link": "#" },
     { "id": 3, "text": "チャベログ", "link": "#" },
 ]
+
+export const BREADCRUMB_LABELS: { [key: string]: string } = {
+    "blog-wordpress": "ブログ / WordPress",
+    "html-css-javascript": "HTML/CSS/JavaScript",
+    "python": "Python"
+};

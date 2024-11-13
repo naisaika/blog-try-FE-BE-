@@ -6,6 +6,7 @@ import { NewSectionList } from "./newSectionList/NewSectionList";
 import { useState } from "react";
 import { TopDataType } from "../../../data/type";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewSectionProps {
   newData: TopDataType[];
@@ -39,10 +40,10 @@ export const NewSection = ({ newData, popularData }: NewSectionProps) => {
       <NewSectionList clickTitle={listClicked} newData={newData} popularData={popularData}/>
       {BUTTON.map((btn) => (
         listClicked === btn.type? (
-          <button key={btn.id} type="button" className={styles.newBtn}>
+          <Link key={btn.id} href="/new-posts" className={styles.newBtn}>
             <Image src={btn.img} alt="ボタンアイコン" width={10} height={16} priority />
             <span className={styles.newBtnText}>{btn.text}</span>
-          </button>
+          </Link>
         ):null
       ))}
     </div>
