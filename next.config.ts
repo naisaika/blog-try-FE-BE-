@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['zatsugaku-engineer.com'], // 使用する外部ドメインをここに追加
   },
+  experimental: {
+    scrollRestoration: true,
+  },
   // experimental: {
   //   turbo: {
   //     rules: {

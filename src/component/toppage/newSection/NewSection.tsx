@@ -18,11 +18,12 @@ interface BtnType {
   img: string;
   text: string;
   type: string;
+  link: string;
 }
 
 const BUTTON:BtnType[] = [
-  {id: 0, img: "/arrow-icon.png", text: "最新記事一覧", type: "NEW"},
-  {id: 1, img: "/arrow-icon.png", text: "人気記事一覧", type: "POPULAR"},
+  {id: 0, img: "/arrow-icon.png", text: "最新記事一覧", type: "NEW", link: "/new-posts"},
+  {id: 1, img: "/arrow-icon.png", text: "人気記事一覧", type: "POPULAR", link: "/popular"},
 ]
 
 
@@ -40,7 +41,7 @@ export const NewSection = ({ newData, popularData }: NewSectionProps) => {
       <NewSectionList clickTitle={listClicked} newData={newData} popularData={popularData}/>
       {BUTTON.map((btn) => (
         listClicked === btn.type? (
-          <Link key={btn.id} href="/new-posts" className={styles.newBtn}>
+          <Link key={btn.id} href={btn.link} className={styles.newBtn}>
             <Image src={btn.img} alt="ボタンアイコン" width={10} height={16} priority />
             <span className={styles.newBtnText}>{btn.text}</span>
           </Link>

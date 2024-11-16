@@ -1,11 +1,10 @@
 import AsideLayout from "@/component/layout/asideLayout/AsideLayout"
-import { NewPostsList } from "@/component/newPostsList/NewPostsList"
-
+import {FirstPostsList} from "@/component/newPostsList/firstPostList/FirstPostList"
 
 const NewPosts = () => {
   return (
     <AsideLayout>
-        <NewPostsList/>
+      <FirstPostsList/>
     </AsideLayout>
   )
 }

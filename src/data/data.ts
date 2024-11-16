@@ -1,4 +1,4 @@
-import { NavType, TopCategoryType, FooterLinkType, FooterTitleType } from "./type"
+import { NavType, TopCategoryType, FooterLinkType, FooterTitleType, SNSType } from "./type"
 
 export const NAV_LIST:NavType[] = [
     { id: 0, text: "Notioneer!! (Notionのページ)", link: "/notioneer" },
@@ -65,4 +65,11 @@ export const BREADCRUMB_LABELS: { [key: string]: string } = {
     "blog-wordpress": "ブログ / WordPress",
     "html-css-javascript": "HTML/CSS/JavaScript",
     "python": "Python"
-};
+}
+
+export const SNS_LISTS:SNSType[] = [
+    { "id": 0, "img": "/snsicon/twitter.png", "text": "ツイート", "width": 40, "height": 40 },
+    { "id": 1, "img": "/snsicon/fb.png", "text": "シェア", "width": 44, "height": 40 },
+    { "id": 2, "img": "/snsicon/hatena.png", "text": "はてブ", "width": 40, "height": 40 },
+    { "id": 3, "img": "/snsicon/line.png", "text": "LINE", "width": 44, "height": 40 },
+]

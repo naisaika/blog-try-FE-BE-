@@ -14,29 +14,23 @@ export const NewSectionList = ({ clickTitle, newData, popularData }: NewSectionL
         <div>
             {clickTitle === "NEW" ? (
             <ul className={styles.newSectionList}>
-                {newData? (
+                {newData&& (
                     newData.map((data) => (
                         <li key={data.id} className={styles.newSectionItem}>
                             <Image src={data.img} alt="最新記事画像" width={316} height={182} priority className={styles.newSectionImg}/>
                             <span className={styles.newSectionText}>{data.title}</span>
                         </li>
-                    ))
-                ) : (
-                    <p>新しいデータがありません。</p>
-                )}
+                )))}
             </ul>
             ) : (
                 <ul className={styles.newSectionList}>
-                    {popularData? (
+                    {popularData && (
                         popularData.map((data) => (
                             <li key={data.id} className={styles.newSectionItem}>
                                 <Image src={data.img} alt="人気記事画像" width={316} height={182} priority className={styles.newSectionImg}/>
                                 <span className={styles.newSectionText}>{data.title}</span>
                             </li>
-                        ))
-                    ) : (
-                        <p>人気のデータがありません。</p>
-                    )}
+                    )))}
                 </ul>
             )}
         </div>

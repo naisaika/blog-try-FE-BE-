@@ -1,0 +1,90 @@
+@use "../../../../styles/common" as *;
+
+.articleList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    list-style: none;
+    margin: 40px 0;
+    gap: 24px;
+    .articleItem {
+        display: flex;
+        padding: 8px;
+        gap: 16px;
+        background-color: $white;
+        cursor: pointer;
+        border-radius: 6px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+        .articleImg {
+            border-radius: 4px;
+        }
+        &:hover {
+            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .2);
+            transition: all 0.6s ease;
+        }
+    }
+    .articleDateContainer {
+        display: flex;
+        align-items: center;
+        .articleDate {
+            color: #b4b4b4;
+            font-size: $size-12;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+    }
+    .articleTitle {
+        font-size: $size-15;
+        color: #4b4b4b;
+        text-overflow: ellipsis;
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    .pageBtn {
+        background-color: #fff;
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        border-radius: 50%;
+        font-size: $size-18;
+        cursor: pointer;
+        &:hover {
+            background-color: #dfdfdf;
+        }
+    }
+    .backBtn {
+        background-color: #fff;
+        border: none;
+        outline: none;
+        padding: 10px 12px 8px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background-color: #dfdfdf;
+        }
+    }
+    .nextBtn {
+        background-color: #fff;
+        border: none;
+        outline: none;
+        padding: 10px 10px 8px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background-color: #dfdfdf;
+        }
+    }
+    .activePage {
+        background-color: $btn;
+        color: #fff;
+        font-weight: 600;
+    }
+    .hidden {
+        display: none;
+    }
+}
+

@@ -64,3 +64,18 @@ export interface ArticleListType {
     img: string;
     createdAt: string;
 }
+
+export interface PopularListType {
+    id: number;
+    title: string;
+    img: string;
+    createdAt: string;
+}
+
+export interface SNSType {
+    id: number;
+    img: string;
+    text: string;
+    width: number;
+    height: number;
+}

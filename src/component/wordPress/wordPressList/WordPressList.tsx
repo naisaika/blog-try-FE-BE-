@@ -16,7 +16,7 @@ export const WordPressList = async() => {
                         <Image src="/update-icon.png" alt="更新アイコン" width={20} height={14} priority></Image>
                         <span className={styles.articleDate}>{data.createdAt}</span>
                     </div>
-                    <h2 className={styles.articleTitle}>{data.title}</h2>
+                    <h2 className={styles.articleTitle}>{data.title.length > 40? `${data.title.slice(0, 40)}...`: data.title}</h2>
                 </div>
             </article>
         ))}
