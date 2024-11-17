@@ -89,10 +89,10 @@ export const CommonFooter = async() => {
                               height={20}
                               priority
                             />
-                            <p className={styles.categoryText}>
+                            <Link href={list.link} className={styles.categoryText}>
                               {list.text}
                               <span className={styles.categoryCount}>{list.count}</span>
-                            </p>
+                            </Link>
                           </div>
                         </li>
                       ))}

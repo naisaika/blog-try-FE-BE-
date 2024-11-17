@@ -1,0 +1,12 @@
+@use "../../../styles/common" as *;
+
+.popularListSection {
+    background-color: $white;
+    padding: 32px 40px;
+    border-radius: 10px;
+    margin-bottom: 160px;
+    .popularListTitle {
+        margin-top: 20px;
+        color: $btn;
+    }
+}

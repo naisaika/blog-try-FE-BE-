@@ -1,0 +1,13 @@
+@use "../../../../styles/common" as *;
+
+.contentsListTitle {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .imgContainer {
+        background-color: #333;
+        padding: 8px 14px 3px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}

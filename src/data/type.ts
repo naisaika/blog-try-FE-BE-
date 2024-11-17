@@ -36,6 +36,7 @@ export interface FooterListType {
     id: number;
     text: string;
     count: number;
+    link: string;
 }
 
 export interface FooterBlogMonth {
@@ -78,4 +79,16 @@ export interface SNSType {
     text: string;
     width: number;
     height: number;
+}
+
+export interface PrivacyPolicyContentsListType {
+    id: number;
+    title: string;
+    anchorlink: string;
+}
+
+export interface ShoppingBtnType {
+    id: number;
+    text: string;
+    link: string;
 }

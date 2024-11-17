@@ -89,10 +89,12 @@ export const TopFooter = async() => {
                               height={20}
                               priority
                             />
-                            <p className={styles.categoryText}>
-                              {list.text}
-                              <span className={styles.categoryCount}>{list.count}</span>
-                            </p>
+                            <Link href={list.link}>
+                              <p className={styles.categoryText}>
+                                <span>{list.text}</span>
+                                <span className={styles.categoryCount}>{list.count}</span>
+                              </p>
+                            </Link>
                           </div>
                         </li>
                       ))}

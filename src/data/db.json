@@ -216,14 +216,14 @@
         }
     ],
     "category": [
-        { "id": 0, "text": "ブログ / WordPress", "count": "18" },
-        { "id": 1, "text": "Notion", "count": "12" },
-        { "id": 2, "text": "Python", "count": "14" },
-        { "id": 3, "text": "HTML/CSS/JavaScript", "count": "6" },
-        { "id": 4, "text": "Google App Script", "count": "1" },
-        { "id": 5, "text": "Arduino", "count": "3" },
-        { "id": 6, "text": "Web制作ノウハウ", "count": "3" },
-        { "id": 7, "text": "Udemy", "count": "1" }
+        { "id": 0, "text": "ブログ / WordPress", "count": "18", "link": "/category/blog-wordpress/" },
+        { "id": 1, "text": "Notion", "count": "12", "link": "/category/notion/" },
+        { "id": 2, "text": "Python", "count": "14", "link": "/category/python/" },
+        { "id": 3, "text": "HTML/CSS/JavaScript", "count": "6", "link": "/category/html-css-javascript/" },
+        { "id": 4, "text": "Google App Script", "count": "1", "link": "/category/gas/" },
+        { "id": 5, "text": "Arduino", "count": "3", "link": "/category/arduino/" },
+        { "id": 6, "text": "Web制作ノウハウ", "count": "3", "link": "/category/web-knowhow/" },
+        { "id": 7, "text": "Udemy", "count": "1", "link": "/category/udemy/" }
     ],
     "tag": [
         { "id": 0, "text": "WordPress", "count": "20" },
@@ -639,6 +639,62 @@
             "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
             "img": "/notion/notion-img11.webp",
             "createdAt": "2023年8月13日"
+        }
+    ],
+    "gas": [
+        {
+            "id": 0, 
+            "title": "【GAS】スプレッドシートで特定のキーワードを含む行を抽出してコピー", 
+            "img": "/gas/gas-img0.webp",
+            "createdAt": "2023年1月15日"
+        }
+    ],
+    "arduino": [
+        {
+            "id": 0, 
+            "title": "Arduinoで自作するラップタイマー #1", 
+            "img": "/arduino/arduino-img0.webp",
+            "createdAt": "2023年5月4日"
+        },
+        {
+            "id": 1, 
+            "title": "超音波距離センサ HC-SR04をArduinoで使う方法!超簡単に距離測定が可能", 
+            "img": "/arduino/arduino-img1.webp",
+            "createdAt": "2022年3月2日"
+        },
+        {
+            "id": 2, 
+            "title": "GP2Y0A02YKをArduinoで使う方法！赤外線センサで距離測定", 
+            "img": "/arduino/arduino-img2.webp",
+            "createdAt": "2023年3月10日"
+        }
+    ],
+    "webknowhow": [
+        {
+            "id": 0, 
+            "title": "無料で使える「おすすめ」の画像圧縮ツールまとめ！8つのツールを徹底比較", 
+            "img": "/webknowhow/webknowhow-img0.webp",
+            "createdAt": "2022年3月22日"
+        },
+        {
+            "id": 1, 
+            "title": "画像圧縮ツール「Squoosh」を使い込なす【無料で高機能】", 
+            "img": "/webknowhow/webknowhow-img1.webp",
+            "createdAt": "2022年3月2日"
+        },
+        {
+            "id": 2, 
+            "title": "WebP（ウェッピー）とは？ メリット・デメリットやPNG・JPEGからの変換方法を解説", 
+            "img": "/webknowhow/webknowhow-img2.webp",
+            "createdAt": "2022年3月2日"
+        }
+    ],
+    "udemy": [
+        {
+            "id": 0, 
+            "title": "Udemyの「爆速で5つのPython Webアプリを開発」を受講して初心者がwebアプリを簡単に作れるようになった", 
+            "img": "/udemy/udemy-img0.webp",
+            "createdAt": "2022年11月27日"
         }
     ],
     "newposts": [

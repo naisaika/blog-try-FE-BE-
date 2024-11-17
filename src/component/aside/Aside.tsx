@@ -4,6 +4,7 @@ import styles from "./Aside.module.scss"
 import { getCategoryData } from "@/app/api/footer/category/route"
 import { getBlogMonthData } from "@/app/api/footer/blogmonth/route"
 import { FooterProfileSection } from "../footer/footerProfileSection/FooterProfileSection"
+import Link from "next/link"
 
 export const Aside = async() => {
 
@@ -20,9 +21,11 @@ export const Aside = async() => {
             </h3>
             <ul className={styles.categoryList}>
                 {categoryData.map((data) => (
-                    <li key={data.id} className={styles.categoryItem}>
-                        <span>{data.text}</span> 
-                        <span className={styles.count}>{data.count}</span>
+                    <li key={data.id}>
+                        <Link  href={data.link} className={styles.categoryItem}>
+                            <span>{data.text}</span> 
+                            <span className={styles.count}>{data.count}</span>
+                        </Link>
                     </li>
                 ))}
             </ul>

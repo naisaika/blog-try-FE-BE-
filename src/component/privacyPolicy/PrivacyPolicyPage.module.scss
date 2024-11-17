@@ -1,0 +1,12 @@
+@use "../../../styles/common" as *;
+
+.privacyPolicySection {
+    background-color: $white;
+    padding: 32px 40px;
+    border-radius: 10px;
+    margin-bottom: 160px;
+    .privacyPolicyTitle {
+        margin-top: 20px;
+        color: $btn;
+    }
+}

@@ -1,0 +1,51 @@
+@use "../../../styles/common" as *;
+
+.shareContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    .shareTitle {
+        color: #bebebe;
+        font-size: $size-22;
+        font-weight: 600;
+        letter-spacing: .1em;
+    }
+    .shareList {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        .snsListItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: all .6s ease;
+            gap: 6px;
+            &:hover {
+                opacity: .6;
+            }
+            .snsText0 {
+                color: #2ab7fe;
+                font-size: $size-12;
+                font-weight: 600;
+            }
+            .snsText1 {
+                color: #3e72f6;
+                font-size: $size-12;
+                font-weight: 600;
+            }
+            .snsText2 {
+                color: #2fa0f1;
+                font-size: $size-12;
+                font-weight: 600;
+            }
+            .snsText3 {
+                color: #3dea48;
+                font-size: $size-12;
+                font-weight: 600;
+            }
+        }
+    }
+}

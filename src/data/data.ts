@@ -1,4 +1,7 @@
-import { NavType, TopCategoryType, FooterLinkType, FooterTitleType, SNSType } from "./type"
+import { 
+    NavType, TopCategoryType, FooterLinkType, FooterTitleType, SNSType, PrivacyPolicyContentsListType,
+    ShoppingBtnType
+ } from "./type"
 
 export const NAV_LIST:NavType[] = [
     { id: 0, text: "Notioneer!! (Notionのページ)", link: "/notioneer" },
@@ -43,9 +46,9 @@ export const FOOTER_TITLES:FooterTitleType[] = [
 ]
 
 export const FOOTER_OTHERS:FooterLinkType[] = [
-    { "id": 0, "text": "サイトマップ", "link": "#" },
-    { "id": 1, "text": "お問い合わせ", "link": "#" },
-    { "id": 2, "text": "プライバシーポリシー", "link": "#" }
+    { "id": 0, "text": "サイトマップ", "link": "sitemap" },
+    { "id": 1, "text": "お問い合わせ", "link": "contact-form" },
+    { "id": 2, "text": "プライバシーポリシー", "link": "/privacy-policy" }
 ]
 
 export const NOTIONEER_FOOTER_TITLE:FooterTitleType[] = [
@@ -64,7 +67,11 @@ export const NOTIONEER_FOOTER_LINK:FooterLinkType[] = [
 export const BREADCRUMB_LABELS: { [key: string]: string } = {
     "blog-wordpress": "ブログ / WordPress",
     "html-css-javascript": "HTML/CSS/JavaScript",
-    "python": "Python"
+    "python": "Python",
+    "gas": "Google App Script",
+    "arduino": "Arduino",
+    "web-knowhow": "Web制作ノウハウ",
+    "udemy": "Udemy"
 }
 
 export const SNS_LISTS:SNSType[] = [
@@ -72,4 +79,18 @@ export const SNS_LISTS:SNSType[] = [
     { "id": 1, "img": "/snsicon/fb.png", "text": "シェア", "width": 44, "height": 40 },
     { "id": 2, "img": "/snsicon/hatena.png", "text": "はてブ", "width": 40, "height": 40 },
     { "id": 3, "img": "/snsicon/line.png", "text": "LINE", "width": 44, "height": 40 },
+]
+
+export const PRIVACY_POLICY_CONTENTS_LISTS:PrivacyPolicyContentsListType[] = [
+    { "id": 0, "title": "当サイトに掲載されている広告について", "anchorlink": "i-1"},
+    { "id": 1, "title": "当サイトが使用しているアクセス解析ツールについて", "anchorlink": "i-2"},
+    { "id": 2, "title": "当サイトへのコメントについて", "anchorlink": "i-3"},
+    { "id": 3, "title": "責任の有無", "anchorlink": "i-4"}
+]
+
+export const SHOPPING_BTN:ShoppingBtnType[] = [
+    { "id": 0, "text": "楽天ブックス", "link": "#" },
+    { "id": 1, "text": "Amazon", "link": "#" },
+    { "id": 2, "text": "Kindle", "link": "#" },
+    { "id": 3, "text": "7net", "link": "#" },
 ]
