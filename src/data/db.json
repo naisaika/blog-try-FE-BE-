@@ -1167,5 +1167,127 @@
             "img": "/popular/popular-img19.webp",
             "createdAt": "2022年3月2日"
         }
+    ],
+    "tagwordpress": [
+        {
+            "id": 0, 
+            "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+            "img": "/popular/popular-img0.webp",
+            "createdAt": "2022年12月30日"
+        },
+        {
+            "id": 1,
+            "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
+            "img": "/popular/popular-img1.webp",
+            "createdAt": "2023年8月13日"
+        },
+        {
+            "id": 2,
+            "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
+            "img": "/popular/popular-img2.webp",
+            "createdAt": "2022年8月25日"
+        },
+        {
+            "id": 3,
+            "title": "【GAS】スプレッドシートで特定のキーワードを含む行を抽出してコピー", 
+            "img": "/popular/popular-img3.webp",
+            "createdAt": "2023年1月15日"
+        },
+        {
+            "id": 4,
+            "title": "【テンプレート配布】Notionでタスク管理！シンプルすぎず複雑すぎないToDoリスト", 
+            "img": "/popular/popular-img4.webp",
+            "createdAt": "2022年8月25日"
+        },
+        {
+            "id": 5,
+            "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+            "img": "/popular/popular-img5.webp",
+            "createdAt": "2022年8月25日"
+        },
+        {
+            "id": 6,
+            "title": "reveal.jsでサクッとスライド作成！VS Codeを使えば簡単】", 
+            "img": "/popular/popular-img6.webp",
+            "createdAt": "2022年4月2日"
+        },
+        {
+            "id": 7,
+            "title": "SANGOで超簡単にトップページをカスタマイズする方法【SANGO Land】", 
+            "img": "/popular/popular-img7.webp",
+            "createdAt": "2022年5月16日"
+        },
+        {
+            "id": 8,
+            "title": "【テンプレート配布】Notionでシンプルな家計簿！飽き性の主婦でも続けられる工夫と作り方", 
+            "img": "/popular/popular-img8.webp",
+            "createdAt": "2022年8月25日"
+        },
+        {
+            "id": 9,
+            "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+            "img": "/popular/popular-img9.webp",
+            "createdAt": "2022年12月11日"
+        },
+        {
+            "id": 10,
+            "title": "超音波距離センサ HC-SR04をArduinoで使う方法!超簡単に距離測定が可能", 
+            "img": "/popular/popular-img10.webp",
+            "createdAt": "2022年3月2日"
+        },
+        {
+            "id": 11,
+            "title": "【テンプレート配布】Notionでブログ記事の下書きをまとめて管理", 
+            "img": "/popular/popular-img11.webp",
+            "createdAt": "2022年11月16日"
+        },
+        {
+            "id": 12,
+            "title": "【Pillow】Pythonで画像をまとめてリサイズ・圧縮！WebPにも変換可能【コピペでOK】", 
+            "img": "/popular/popular-img12.webp",
+            "createdAt": "2022年3月2日"
+        },
+        {
+            "id": 13,
+            "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+            "img": "/popular/popular-img13.webp",
+            "createdAt": "2022年9月25日"
+        },
+        {
+            "id": 14,
+            "title": "GP2Y0A02YKをArduinoで使う方法！赤外線センサで距離測定", 
+            "img": "/popular/popular-img14.webp",
+            "createdAt": "2023年3月10日"
+        },
+        {
+            "id": 15,
+            "title": "Notionに繰り返しタスクを自動で追加できる「Noway Task」の使い方", 
+            "img": "/popular/popular-img15.webp",
+            "createdAt": "2022年8月25日"
+        },
+        {
+            "id": 16,
+            "title": "ミスチルの歌詞をネガポジ分析してみた【日本語評価極性辞書】", 
+            "img": "/popular/popular-img16.webp",
+            "createdAt": "2022年3月2日"
+        },
+        {
+            "id": 17,
+            "title": "【テンプレート配布】Notionでサブスクと固定費を管理【グラフ表示あり】", 
+            "img": "/popular/popular-img17.webp",
+            "createdAt": "2022年8月25日"
+        },
+        {
+            "id": 18,
+            "title": "SANGO Landの使い方！センスやプログラミングの知識が無くても美しいデザインのサイトが作れるwebサービス【WordPress】", 
+            "img": "/popular/popular-img18.webp",
+            "createdAt": "2022年8月16日"
+        },
+        {
+            "id": 19,
+            "title": "ミスチルの歌詞をスクレイピングで取得してみた【Beautiful Soup】", 
+            "img": "/popular/popular-img19.webp",
+            "createdAt": "2022年3月2日"
+        }
     ]     
 }
