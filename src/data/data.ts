@@ -1,5 +1,5 @@
 import { 
-    NavType, TopCategoryType, FooterLinkType, FooterTitleType, SNSType, PrivacyPolicyContentsListType,
+    NavType, TopCategoryType, FooterLinkType, FooterTitleType, SNSType, ContentsListType,
     ShoppingBtnType
  } from "./type"
 
@@ -81,7 +81,7 @@ export const SNS_LISTS:SNSType[] = [
     { "id": 3, "img": "/snsicon/line.png", "text": "LINE", "width": 44, "height": 40 },
 ]
 
-export const PRIVACY_POLICY_CONTENTS_LISTS:PrivacyPolicyContentsListType[] = [
+export const PRIVACY_POLICY_CONTENTS_LISTS:ContentsListType[] = [
     { "id": 0, "title": "当サイトに掲載されている広告について", "anchorlink": "i-1"},
     { "id": 1, "title": "当サイトが使用しているアクセス解析ツールについて", "anchorlink": "i-2"},
     { "id": 2, "title": "当サイトへのコメントについて", "anchorlink": "i-3"},

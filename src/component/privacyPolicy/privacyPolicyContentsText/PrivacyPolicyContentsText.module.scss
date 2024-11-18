@@ -1,0 +1,12 @@
+@use "../../../../styles/common" as *;
+
+.contentsText {
+    margin: 16px 0 40px;
+    color: $btn;
+    line-height: 2;
+    text-align: justify;
+    .contentsLink {
+        color: $skyblue;
+        text-decoration: underline;
+    }
+}

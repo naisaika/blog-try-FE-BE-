@@ -81,7 +81,7 @@ export interface SNSType {
     height: number;
 }
 
-export interface PrivacyPolicyContentsListType {
+export interface ContentsListType {
     id: number;
     title: string;
     anchorlink: string;

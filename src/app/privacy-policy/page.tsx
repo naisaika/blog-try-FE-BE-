@@ -1,11 +1,11 @@
-import AsideLayout from "@/component/layout/asideLayout/AsideLayout"
+import ContentsAsideLayout from "@/component/layout/contentsAsideLayout/ContentsAsideLayout"
 import { PrivacyPolicyPage } from "@/component/privacyPolicy/PrivacyPolicyPage"
 
 const PrivacyPolicy = () => {
   return (
-    <AsideLayout>
+    <ContentsAsideLayout>
       <PrivacyPolicyPage/>
-    </AsideLayout>
+    </ContentsAsideLayout>
   )
 }
 

@@ -1,0 +1,29 @@
+@use "../../../../../styles/common" as *;
+
+.contentsListTitle{
+    background: #dedee4;
+    padding: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: $btn;
+    font-size: $size-20;
+}
+.contentsList {
+    background-color: $white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .contentsListItem {
+        color: $btn;
+        font-size: $size-15;
+        cursor: pointer;
+        padding: 4px;
+        &:hover {
+            background-color: #ededed;
+        }
+    }
+    .active {
+        background-color: #ededed; 
+    }
+} 

@@ -1,0 +1,15 @@
+@use "../../../../styles/common" as *;
+
+.main {
+    background-color: rgb(232, 235, 243);
+    .mainWrapper {
+        display: flex;
+        max-width: 1200px;
+        padding: 40px 16px 60px;
+        margin: 0 auto;
+        gap: 60px;
+    }
+    .mainSection {
+        width: 70%;
+    }
+}

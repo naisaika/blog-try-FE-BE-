@@ -30,7 +30,7 @@ export const Aside = async() => {
                 ))}
             </ul>
         </div>
-        <div>
+        <div className={styles.archiveContainer}>
             <h3 className={styles.asideTitle}>
                 <Image src="/aside/archive-icon.png" alt="カテゴリーアイコン" width={20} height={16} priority></Image>
                 アーカイブ
