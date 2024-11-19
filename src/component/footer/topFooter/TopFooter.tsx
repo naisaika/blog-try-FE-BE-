@@ -7,6 +7,7 @@ import { getTagData } from "@/app/api/footer/tag/route"
 import { getBlogMonthData } from "@/app/api/footer/blogmonth/route"
 import { FooterTitle } from "../footerTitle/FooterTitle"
 import { FooterSearchSection } from "../footerSearchSection/FooterSearchSection"
+import { FooterTagSection } from "../footerTagSection/FooterTagSection"
 
 export const TopFooter = async() => {
 
@@ -110,14 +111,7 @@ export const TopFooter = async() => {
                       height={title.height}
                       title={title.title}
                     />
-                    <ul className={styles.tagList}>
-                      {tagData.map((list) => (
-                        <li key={list.id} className={styles.tagItem}>
-                          {`#${list.text}`}
-                          <span className={styles.tagCount}>{`(${list.count})`}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <FooterTagSection tagData={tagData}/>
                   </>
                 )}
               </div>

@@ -71,7 +71,8 @@ export const BREADCRUMB_LABELS: { [key: string]: string } = {
     "gas": "Google App Script",
     "arduino": "Arduino",
     "web-knowhow": "Web制作ノウハウ",
-    "udemy": "Udemy"
+    "udemy": "Udemy",
+    "ワードプレス": "ワードプレス"
 }
 
 export const SNS_LISTS:SNSType[] = [

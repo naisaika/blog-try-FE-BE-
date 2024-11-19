@@ -92,3 +92,10 @@ export interface ShoppingBtnType {
     text: string;
     link: string;
 }
+
+export interface TagListType {
+    id: number;
+    title: string;
+    img: string;
+    createdAt: string;
+}
