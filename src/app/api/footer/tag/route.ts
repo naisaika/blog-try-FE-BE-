@@ -1,7 +1,7 @@
-import { FooterListType } from "@/data/type";
+import { FooterTagType } from "@/data/type";
 import { NextResponse } from "next/server";
 
-export const getTagData = async (): Promise<FooterListType[]> => {
+export const getTagData = async (): Promise<FooterTagType[]> => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BE_API_URL}/tag`);
 
     if(!res.ok) {

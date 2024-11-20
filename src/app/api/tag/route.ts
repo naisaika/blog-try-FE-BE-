@@ -24,6 +24,7 @@ export const getTagListData = async(): Promise<
         review: TagListType[],
         study: TagListType[]
     }> => {
+
     const res = await fetch(`${process.env.NEXT_PUBLIC_BE_API_URL}/taglist`);
 
     if (!res.ok) {
@@ -43,7 +44,7 @@ export const getTagListData = async(): Promise<
     const statisticsTagData = tagListData[0]?.statisticstag || [];
     const wordPressKanaData = tagListData[0]?.wordpresskana || [];
     const streamlitData = tagListData[0]?.streamlit || [];
-    const webAppsData = tagListData[0]?.cwebapps || [];
+    const webAppsData = tagListData[0]?.webapps || [];
     const raziconData = tagListData[0]?.razicon || [];
     const electronicEngineeringData = tagListData[0]?.electronicengineering || [];
     const udemyData = tagListData[0]?.udemy || [];
@@ -74,7 +75,7 @@ export const getTagListData = async(): Promise<
         altair: altairData,
         notioncharts: notionChartsData,
         review: reviewData,
-        study: reviewData
+        study: studyData
     };
 }
 

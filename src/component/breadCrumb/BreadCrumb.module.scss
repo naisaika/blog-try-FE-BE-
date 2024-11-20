@@ -47,6 +47,18 @@
             color: #a8a8a8;
         }
     }
+    .breadCrumbTag {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #a8a8a8;
+        .tagImg {
+            margin: 8px -4px 0 4px;
+        }
+        .tagText {
+            margin-top: 4px;
+        }
+    }
 }
 
 .linkText__last {

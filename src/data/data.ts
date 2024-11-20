@@ -71,9 +71,59 @@ export const BREADCRUMB_LABELS: { [key: string]: string } = {
     "gas": "Google App Script",
     "arduino": "Arduino",
     "web-knowhow": "Web制作ノウハウ",
+    "wordpress": "WordPress",
+    "zeroblog": "ゼロから始めるブログ運営",
+    "sango": "SANGO",
+    "web-design": "web制作",
+    "img-tag": "画像",
+    "automation": "自動化",
+    "data-analysis": "分析",
+    "plugin": "プラグイン",
+    "statistics-tag": "統計学",
+    "streamlit": "Streamlit",
+    "web-apps": "webアプリ",
+    "razicon": "ラジコン",
+    "electronic-engineering": "電子工作",
     "udemy": "Udemy",
-    "ワードプレス": "ワードプレス"
+    "altair": "Altair",
+    "notion-charts": "notion charts",
+    "review": "レビュー",
+    "study": "学習"
 }
+
+export const CATEGORY_GETDATA_CONVERSION: Record<string, string> = {
+    "blog-wordpress": "wordpress",
+    "notion": "notion",
+    "python": "python",
+    "html-css-javascript": "htmlcssjavascript",
+    "gas": "gas",
+    "arduino": "arduino",
+    "web-knowhow": "webknowhow",
+    "udemy": "udemy"
+  };
+
+export const TAG_GETDATA_CONVERSION: Record<string, string> = {
+    "wordpress": "wordpress",
+    "zeroblog": "zeroblog",
+    "sango": "sango",
+    "web-design": "webdesign",
+    "img-tag": "imgtag",
+    "automation": "automation",
+    "data-analysis": "dataanalysis",
+    "plugin": "plugin",
+    "statistics-tag": "statisticstag",
+    "streamlit": "streamlit",
+    "web-apps": "webapps",
+    "razicon": "razicon",
+    "electronic-engineering": "electronicengineering",
+    "udemy": "udemy",
+    "altair": "altair",
+    "notion-charts": "notioncharts",
+    "review": "review",
+    "study": "study",
+    "ワードプレス": "wordpresskana",
+    "スプレッドシート": "spreadsheet",
+};
 
 export const SNS_LISTS:SNSType[] = [
     { "id": 0, "img": "/snsicon/twitter.png", "text": "ツイート", "width": 40, "height": 40 },

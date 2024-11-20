@@ -8,7 +8,9 @@ import { BREADCRUMB_LABELS } from "@/data/data"
 export const MainPageTitle = () => {
 
   const pathname = usePathname();
-  const pathSegments = pathname.split("/").filter(segment => segment); // 空のセグメントを除外
+
+  const decodedPath = decodeURIComponent(pathname); // パス全体をデコード
+  const pathSegments = decodedPath.split("/").filter(segment => segment); // 空のセグメントを除外
   const lastSegment = pathSegments[pathSegments.length - 1]; // 最後のセグメントを取得
   const title = BREADCRUMB_LABELS[lastSegment] || lastSegment;
 

@@ -39,6 +39,13 @@ export interface FooterListType {
     link: string;
 }
 
+export interface FooterTagType {
+    id: number;
+    text: string;
+    count: number;
+    url: string;
+}
+
 export interface FooterBlogMonth {
     id: number;
     date: string;
@@ -94,6 +101,13 @@ export interface ShoppingBtnType {
 }
 
 export interface TagListType {
+    id: number;
+    title: string;
+    img: string;
+    createdAt: string;
+}
+
+export interface CategoryListType {
     id: number;
     title: string;
     img: string;

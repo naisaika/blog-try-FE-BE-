@@ -234,8 +234,8 @@
         { "id": 5, "text": "自動化", "count": "7", "url": "automation" },
         { "id": 6, "text": "分析", "count": "6", "url": "data-analysis" },
         { "id": 7, "text": "プラグイン", "count": "5" , "url": "plugin"},
-        { "id": 8, "text": "統計学", "count": "4", "url": "statistics-tag" },
-        { "id": 9, "text": "ワードプレス", "count": "3" , "url": "ワードプレス"},
+        { "id": 8, "text": "統計学", "count": "5", "url": "statistics-tag" },
+        { "id": 9, "text": "ワードプレス", "count": "4" , "url": "ワードプレス"},
         { "id": 10, "text": "Streamlit", "count": "3", "url": "streamlit" },
         { "id": 11, "text": "webアプリ", "count": "3" , "url": "web-apps"},
         { "id": 12, "text": "ラジコン", "count": "3", "url": "razicon"},
@@ -1290,6 +1290,374 @@
             "createdAt": "2022年3月2日"
         }
     ],
+    "categorylist": [
+        {
+            "wordpress": [
+                {
+                    "id": 0, 
+                    "title": "SANGO Landのおすすめブロックまとめ【その他ブロック編】", 
+                    "img": "/wordpress/wordpress-img0.webp",
+                    "createdAt": "2022年7月7日"
+                },
+                {
+                    "id": 1,
+                    "title": "SANGO Landのおすすめブロックまとめ！活用例や使い方も解説", 
+                    "img": "/wordpress/wordpress-img1.webp",
+                    "createdAt": "2022年7月3日"
+                },
+                {
+                    "id": 2,
+                    "title": "SANGOで超簡単にトップページをカスタマイズする方法【SANGO Land】", 
+                    "img": "/wordpress/wordpress-img2.webp",
+                    "createdAt": "2022年5月16日"
+                },
+                {
+                    "id": 3,
+                    "title": "SANGO Landの使い方！センスやプログラミングの知識が無くても美しいデザインのサイトが作れるwebサービス【WordPress】", 
+                    "img": "/wordpress/wordpress-img3.webp",
+                    "createdAt": "2022年8月16日"
+                },
+                {
+                    "id": 4,
+                    "title": "【WordPress】SANGOのプロフィールで改行する方法", 
+                    "img": "/wordpress/wordpress-img4.webp",
+                    "createdAt": "2022年5月3日"
+                },
+                {
+                    "id": 5,
+                    "title": "再利用ブロックでWordPress記事を書く効率を上げよう！", 
+                    "img": "/wordpress/wordpress-img5.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 6,
+                    "title": "【SANGO】カテゴリ並び順の変更とカテゴリラベルの色変更", 
+                    "img": "/wordpress/wordpress-img6.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 7,
+                    "title": "プラグイン無しでWordPressデータベースからcsv出力する方法", 
+                    "img": "/wordpress/wordpress-img7.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 8,
+                    "title": "SANGOで吹き出しを使う方法！アイコンが表示できない場合の対処法も解説", 
+                    "img": "/wordpress/wordpress-img8.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 9,
+                    "title": "EWWW Image OptimizerでJPEG・PNGをWebPに変換", 
+                    "img": "/wordpress/wordpress-img9.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 10,
+                    "title": "EWWW Image Optimizerの設定方法【設定で画像圧縮率が大幅に向上】", 
+                    "img": "/wordpress/wordpress-img10.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 11,
+                    "title": "TwitterとWordPressの連携方法　SANGOでSummary Cardを設定する方法も解説", 
+                    "img": "/wordpress/wordpress-img11.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 12,
+                    "title": "SANGOでおすすめの3つの基本設定　【追従する目次がおすすめ】", 
+                    "img": "/wordpress/wordpress-img12.webp",
+                    "createdAt": "2022年5月19日"
+                },
+                {
+                    "id": 13,
+                    "title": "WordPressで表がはみ出す時の解決方法【SANGO+スクロールヒント】", 
+                    "img": "/wordpress/wordpress-img13.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 14,
+                    "title": "【Contact Form 7】お問い合わせページを10分で設置する方法", 
+                    "img": "/wordpress/wordpress-img14.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 15,
+                    "title": "WordPressで適切にパーマリンクを設定する", 
+                    "img": "/wordpress/wordpress-img15.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 16,
+                    "title": "【SANGOとの相性を解説】WordPressにおすすめのプラグイン13選", 
+                    "img": "/wordpress/wordpress-img16.webp",
+                    "createdAt": "2022年5月5日"
+                },
+                {
+                    "id": 17,
+                    "title": "【ConoHa WING + SANGO】サーバー契約とWordPress初期設定について解説", 
+                    "img": "/wordpress/wordpress-img17.webp",
+                    "createdAt": "2022年5月4日"
+                }  
+            ],
+            "htmlcssjavascript": [
+                {
+                    "id": 0, 
+                    "title": "【mosya】Progate が終わったら次におすすめの実践的なプログラミング学習サービス", 
+                    "img": "/htmlcssjavascript/htmlcssjavascript-img0.webp",
+                    "createdAt": "2023年7月9日"
+                },
+                {
+                    "id": 1,
+                    "title": "Qiita風のページを作ってみた", 
+                    "img": "/htmlcssjavascript/htmlcssjavascript-img1.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 2,
+                    "title": "reveal.jsで超簡単にクイズページが作れて便利", 
+                    "img": "/htmlcssjavascript/htmlcssjavascript-img2.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 3,
+                    "title": "reveal.jsでサクッとスライド作成！VS Codeを使えば簡単", 
+                    "img": "/htmlcssjavascript/htmlcssjavascript-img3.webp",
+                    "createdAt": "2022年4月2日"
+                },
+                {
+                    "id": 4,
+                    "title": "iframeのリンクをセレクトボックスで切り替える！", 
+                    "img": "/htmlcssjavascript/htmlcssjavascript-img4.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 5,
+                    "title": "クイズアプリや診断サイトをBootstrap+jQueryで簡単に作成", 
+                    "img": "/htmlcssjavascript/htmlcssjavascript-img5.webp",
+                    "createdAt": "2022年3月2日"
+                }
+            ],
+            "python": [
+                {
+                    "id": 0, 
+                    "title": "【検索順位チェックツール】ブログ記事の検索順位をStreamlitでグラフ化【python自作ツール】", 
+                    "img": "/python/python-img0.webp",
+                    "createdAt": "2022年11月26日"
+                },
+                {
+                    "id": 1,
+                    "title": "Streamlitでスプレッドシートからデータ取得【シークレットマネージャーの使用方法も解説】", 
+                    "img": "/python/python-img1.webp",
+                    "createdAt": "2022年3月6日"
+                },
+                {
+                    "id": 2,
+                    "title": "StreamlitでAltairのインタラクティブなグラフを表示する方法", 
+                    "img": "/python/python-img2.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 3,
+                    "title": "ローカル環境で使うメモアプリを自作！全文検索機能付き】", 
+                    "img": "/python/python-img3.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 4,
+                    "title": "ミスチルの歌詞をPythonで分析【形態素解析→ネガポジ分析】", 
+                    "img": "/python/python-img4.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 5,
+                    "title": "ミスチルの終わりなき旅をCloud Natural Language APIで感情分析してみた", 
+                    "img": "/python/python-img5.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 6,
+                    "title": "ミスチルで一番ポジティブな曲とネガティブな曲は？【日本語評価極性辞書でネガポジ分析】", 
+                    "img": "/python/python-img6.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 7,
+                    "title": "ミスチルの歌詞をネガポジ分析してみた【日本語評価極性辞書】", 
+                    "img": "/python/python-img7.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 8,
+                    "title": "ミスチルで一番使われている単語は「君」と「僕」", 
+                    "img": "/python/python-img8.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 9,
+                    "title": "ミスチルの歌詞をJanomeで解析してWordCloudで可視化してみた", 
+                    "img": "/python/python-img9.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 10,
+                    "title": "ミスチルの歌詞をスクレイピングで取得してみた【Beautiful Soup】", 
+                    "img": "/python/python-img10.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 11,
+                    "title": "【Pillow】Pythonで画像をまとめてリサイズ・圧縮！WebPにも変換可能【コピペでOK】", 
+                    "img": "/python/python-img11.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 12,
+                    "title": "【Pillow】Pythonで画像をWebpに変換！エラーが出て変換できない場合の対処法も解説", 
+                    "img": "/python/python-img12.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 13,
+                    "title": "ブログ記事投稿数をPythonで自動グラフ化！", 
+                    "img": "/python/python-img13.webp",
+                    "createdAt": "2022年3月2日"
+                }
+            ],
+            "notion": [
+                {
+                    "id": 0, 
+                    "title": "【2022年版】Notionおすすめ本4選！レベル別にオススメのポイントを解説", 
+                    "img": "/notion/notion-img0.webp",
+                    "createdAt": "2022年12月11日"
+                },
+                {
+                    "id": 1,
+                    "title": "Noway Formの使い方！Notionだけで完結するお問い合わせフォームが作成できる神サービス【無料】", 
+                    "img": "/notion/notion-img1.webp",
+                    "createdAt": "2022年12月11日"
+                },
+                {
+                    "id": 2,
+                    "title": "Notionのギャラリービューでプロパティ名を表示する方法", 
+                    "img": "/notion/notion-img2.webp",
+                    "createdAt": "2022年8月25日"
+                },
+                {
+                    "id": 3,
+                    "title": "Notionに繰り返しタスクを自動で追加できる「Noway Task」の使い方", 
+                    "img": "/notion/notion-img3.webp",
+                    "createdAt": "2022年8月25日"
+                },
+                {
+                    "id": 4,
+                    "title": "Notion SlidesとWunderpresentationの使い方！Notionで簡単にプレゼンスライド作成", 
+                    "img": "/notion/notion-img4.webp",
+                    "createdAt": "2022年9月25日"
+                },
+                {
+                    "id": 5,
+                    "title": "スプレッドシートのデータやグラフをNotionに表示する方法【埋め込み or Notion Charts】", 
+                    "img": "/notion/notion-img5.webp",
+                    "createdAt": "2022年8月25日"
+                },
+                {
+                    "id": 6,
+                    "title": "【テンプレート配布】Notionでサブスクと固定費を管理【グラフ表示あり】", 
+                    "img": "/notion/notion-img6.webp",
+                    "createdAt": "2022年8月25日"
+                },
+                {
+                    "id": 7,
+                    "title": "【Notion Chartsの使い方】データベースを超簡単にグラフ化【無料で5分で作成】", 
+                    "img": "/notion/notion-img7.webp",
+                    "createdAt": "2022年12月30日"
+                },
+                {
+                    "id": 8,
+                    "title": "【テンプレート配布】Notionでシンプルな家計簿！飽き性の主婦でも続けられる工夫と作り方」", 
+                    "img": "/notion/notion-img8.webp",
+                    "createdAt": "2022年8月25日"
+                },
+                {
+                    "id": 9,
+                    "title": "【テンプレート配布】Notionでブログ記事の下書きをまとめて管理", 
+                    "img": "/notion/notion-img9.webp",
+                    "createdAt": "2022年11月16日"
+                },
+                {
+                    "id": 10,
+                    "title": "【テンプレート配布】Notionでタスク管理！シンプルすぎず複雑すぎないToDoリスト", 
+                    "img": "/notion/notion-img10.webp",
+                    "createdAt": "2022年8月25日"
+                },
+                {
+                    "id": 11,
+                    "title": "【テンプレート配布】Notionで旅行計画と旅行記を作成！家族や友達と簡単に共有出来て便利", 
+                    "img": "/notion/notion-img11.webp",
+                    "createdAt": "2023年8月13日"
+                }
+            ],
+            "gas": [
+                {
+                    "id": 0, 
+                    "title": "【GAS】スプレッドシートで特定のキーワードを含む行を抽出してコピー", 
+                    "img": "/gas/gas-img0.webp",
+                    "createdAt": "2023年1月15日"
+                }
+            ],
+            "arduino": [
+                {
+                    "id": 0, 
+                    "title": "Arduinoで自作するラップタイマー #1", 
+                    "img": "/arduino/arduino-img0.webp",
+                    "createdAt": "2023年5月4日"
+                },
+                {
+                    "id": 1, 
+                    "title": "超音波距離センサ HC-SR04をArduinoで使う方法!超簡単に距離測定が可能", 
+                    "img": "/arduino/arduino-img1.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 2, 
+                    "title": "GP2Y0A02YKをArduinoで使う方法！赤外線センサで距離測定", 
+                    "img": "/arduino/arduino-img2.webp",
+                    "createdAt": "2023年3月10日"
+                }
+            ],
+            "webknowhow": [
+                {
+                    "id": 0, 
+                    "title": "無料で使える「おすすめ」の画像圧縮ツールまとめ！8つのツールを徹底比較", 
+                    "img": "/webknowhow/webknowhow-img0.webp",
+                    "createdAt": "2022年3月22日"
+                },
+                {
+                    "id": 1, 
+                    "title": "画像圧縮ツール「Squoosh」を使い込なす【無料で高機能】", 
+                    "img": "/webknowhow/webknowhow-img1.webp",
+                    "createdAt": "2022年3月2日"
+                },
+                {
+                    "id": 2, 
+                    "title": "WebP（ウェッピー）とは？ メリット・デメリットやPNG・JPEGからの変換方法を解説", 
+                    "img": "/webknowhow/webknowhow-img2.webp",
+                    "createdAt": "2022年3月2日"
+                }
+            ],
+            "udemy": [
+                {
+                    "id": 0, 
+                    "title": "Udemyの「爆速で5つのPython Webアプリを開発」を受講して初心者がwebアプリを簡単に作れるようになった", 
+                    "img": "/udemy/udemy-img0.webp",
+                    "createdAt": "2022年11月27日"
+                }
+            ]
+        }
+    ],
     "taglist": [
         { 
             "wordpress": [
@@ -1418,109 +1786,109 @@
                 {
                     "id": 0,
                     "title": "【検索順位チェックツール】ブログ記事の検索順位をStreamlitでグラフ化【python自作ツール】", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img0.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img0.webp",
                     "createdAt": "2022年11月26日"  
                 },
                 {
                     "id": 1,
                     "title": "【テンプレート配布】Notionでブログ記事の下書きをまとめて管理", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img1.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img1.webp",
                     "createdAt": "2022年11月16日"  
                 },
                 {
                     "id": 2,
                     "title": "再利用ブロックでWordPress記事を書く効率を上げよう！", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img2.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img2.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 3,
                     "title": "【SANGO】カテゴリ並び順の変更とカテゴリラベルの色変更", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img3.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img3.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 4,
                     "title": "ブログ記事投稿数をPythonで自動グラフ化！", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img4.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img4.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 5,
                     "title": "プラグイン無しでWordPressデータベースからcsv出力する方法", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img5.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img5.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 6,
                     "title": "無料で使える「おすすめ」の画像圧縮ツールまとめ！8つのツールを徹底比較", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img6.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img6.webp",
                     "createdAt": "2022年3月12日"  
                 },
                 {
                     "id": 7,
                     "title": "SANGOで吹き出しを使う方法！アイコンが表示できない場合の対処法も解説", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img7.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img7.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 8,
                     "title": "画像圧縮ツール「Squoosh」を使い込なす【無料で高機能】", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img8.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img8.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 9,
                     "title": "EWWW Image OptimizerでJPEG・PNGをWebPに変換", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img9.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img9.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 10,
                     "title": "EWWW Image Optimizerの設定方法【設定で画像圧縮率が大幅に向上】", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img10.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img10.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 11,
                     "title": "TwitterとWordPressの連携方法　SANGOでSummary Cardを設定する方法も解説", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img11.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img11.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 12,
                     "title": "SANGOでおすすめの3つの基本設定　【追従する目次がおすすめ】", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img12.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img12.webp",
                     "createdAt": "2022年5月19日"  
                 },
                 {
                     "id": 13,
                     "title": "WordPressで表がはみ出す時の解決方法【SANGO+スクロールヒント】", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img13.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img13.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 14,
                     "title": "【Contact Form 7】お問い合わせページを10分で設置する方法", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img14.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img14.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 15,
                     "title": "WordPressで適切にパーマリンクを設定する", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img15.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img15.webp",
                     "createdAt": "2022年3月2日"  
                 },
                 {
                     "id": 16,
                     "title": "【SANGOとの相性を解説】WordPressにおすすめのプラグイン13選", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img16.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img16.webp",
                     "createdAt": "2022年5月5日"  
                 },
                 {
                     "id": 17,
                     "title": "【ConoHa WING + SANGO】サーバー契約とWordPress初期設定について解説", 
-                    "img": "/tag/zeloblog/tag-zeroblog-img17.webp",
+                    "img": "/tag/zeroblog/tag-zeroblog-img17.webp",
                     "createdAt": "2022年5月4日"  
                 }
             ],
@@ -1649,8 +2017,14 @@
                 },
                 {
                     "id": 7,
-                    "title": "WebP（ウェッピー）とは？ メリット・デメリットやPNG・JPEGからの変換方法を解説", 
+                    "title": "画像圧縮ツール「Squoosh」を使い込なす【無料で高機能】", 
                     "img": "/tag/webdesign/tag-webdesign-img7.webp",
+                    "createdAt": "2022年3月2日"  
+                },
+                {
+                    "id": 8,
+                    "title": "WebP（ウェッピー）とは？ メリット・デメリットやPNG・JPEGからの変換方法を解説", 
+                    "img": "/tag/webdesign/tag-webdesign-img8.webp",
                     "createdAt": "2022年3月2日"  
                 }
             ],
