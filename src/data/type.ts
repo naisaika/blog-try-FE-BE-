@@ -113,3 +113,11 @@ export interface CategoryListType {
     img: string;
     createdAt: string;
 }
+
+export interface FormTitleType {
+    id: string;
+    label: string;
+    register: "yourname" | "email" | "title" | "message";
+    autoComplete?: string;
+    isTextArea: boolean;
+}

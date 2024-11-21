@@ -5,7 +5,7 @@ import AsideLayout from "@/component/layout/asideLayout/AsideLayout"
 const ContactForm = () => {
   return (
     <AsideLayout>
-        <ContactFormSection/>
+      <ContactFormSection/>
     </AsideLayout>
   )
 }

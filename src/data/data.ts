@@ -1,6 +1,7 @@
 import { 
     NavType, TopCategoryType, FooterLinkType, FooterTitleType, SNSType, ContentsListType,
-    ShoppingBtnType
+    ShoppingBtnType,
+    FormTitleType
  } from "./type"
 
 export const NAV_LIST:NavType[] = [
@@ -144,4 +145,11 @@ export const SHOPPING_BTN:ShoppingBtnType[] = [
     { "id": 1, "text": "Amazon", "link": "#" },
     { "id": 2, "text": "Kindle", "link": "#" },
     { "id": 3, "text": "7net", "link": "#" },
+]
+
+export const FORM_TITLE:FormTitleType[] = [
+    { "id": "yourname", "label": "氏名（必須）", "register": "yourname", "autoComplete": "name", "isTextArea": false},
+    { "id": "email", "label": "メールアドレス（必須）", "register": "email", "autoComplete": "email", "isTextArea": false},
+    { "id": "title", "label": "題名（任意）", "register": "title",  "isTextArea": false},
+    { "id": "message", "label": "メッセージ本文（必須）", "register": "message", "isTextArea": true}
 ]

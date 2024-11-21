@@ -22,7 +22,9 @@ export const formSchema = z.object({
         .regex(
             /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
             {message: "正しいメールアドレスの形式で入力をしてください。"}),
-    content: z
+    title: z
+    .string(),
+    message: z
         .string()
         .min(1, { message: "お問い合わせ内容は、入力必須です。" })
         .max(1000, {message: "1000文字以下で入力してください。"})
